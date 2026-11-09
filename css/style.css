@@ -75,6 +75,8 @@ a { color: var(--accent); }
   font-weight: 500;
 }
 .nav a:hover, .nav a.active { color: var(--text); background: var(--chip); }
+.nav a.nav-add { color: var(--accent); border: 1px solid var(--accent); }
+.nav a.nav-add:hover { background: var(--accent); color: #fff; }
 
 /* Hero */
 .hero {
