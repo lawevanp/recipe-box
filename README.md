@@ -16,11 +16,10 @@ You can edit it right on GitHub (open the file, click the pencil icon, then **Co
 the site updates within a minute or two.
 
 ### Adding a recipe from a photo
-Click **+ Add recipe** on the site (or open a new issue with the "Add a recipe from a photo"
-form) and attach photos. A GitHub Action ([`.github/workflows/add-recipe.yml`](.github/workflows/add-recipe.yml))
-has Claude transcribe them into `data/recipes.txt` and opens a pull request. Check it over and click
-**Merge**. It only runs for issues opened by the repo owner, and needs a `CLAUDE_CODE_OAUTH_TOKEN`
-or `ANTHROPIC_API_KEY` repository secret.
+Click **+ Add recipe** on the site. It opens the private Recipe Inbox page on claude.ai
+(https://claude.ai/artifact/JEoWe4Y1Pf7oDjzLF7nLAP), where you add photos, have Claude type them
+up, fix anything, and click **Approve**. Then ask Claude Code to "add the approved recipes from my
+Recipe Inbox": it copies them into `data/recipes.txt`, pushes, and marks them "On the site".
 
 Categories: `breakfast`, `entree`, `side`, `soup`, `bread`, `dessert`, `snack`, `sauce`.
 To add or rename categories, edit the `CATEGORIES` list at the top of [`js/app.js`](js/app.js).
