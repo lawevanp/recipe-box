@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe · Recipe Box</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Recipe<span>Box</span></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="recipes.html">All Recipes</a>
+        <a href="recipes.html?type=entree">Entrees</a>
+        <a href="recipes.html?type=dessert">Desserts</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="recipe-detail" id="recipe"></article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Recipe Box</div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script>
+    // Sections whose bullet lists are ingredients get tick-off checkboxes.
+    const NOT_INGREDIENTS = /direction|instruction|variation|note|tip|carb|assembl|serve|prep/i;
+
+    function blockHtml(block, checkable) {
+      const items = block.items.map(escapeHtml);
+      if (block.type === "p") return `<p>${items[0]}</p>`;
+      if (block.type === "ol") return `<ol class="steps">${items.map((i) => `<li>${i}</li>`).join("")}</ol>`;
+      if (checkable) {
+        return `<ul class="checklist">${items.map((i) =>
+          `<li><label><input type="checkbox"><span>${i}</span></label></li>`).join("")}</ul>`;
+      }
+      return `<ul class="plain-list">${items.map((i) => `<li>${i}</li>`).join("")}</ul>`;
+    }
+
+    loadRecipes().then(() => {
+      const id = new URLSearchParams(location.search).get("id");
+      const r = RECIPES.find((x) => x.id === id);
+      const el = document.getElementById("recipe");
+
+      if (!r) {
+        el.innerHTML = `
+          <h1>Recipe not found</h1>
+          <p class="lead">We couldn't find that recipe.</p>
+          <a class="btn" href="recipes.html">Browse all recipes</a>`;
+        return;
+      }
+
+      const cat = categoryById(r.category);
+      document.title = `${r.title} · Recipe Box`;
+      const fact = (label, value) => value
+        ? `<div class="fact"><span class="label">${label}</span><span class="value">${escapeHtml(value)}</span></div>` : "";
+      const facts = fact("Prep", r.prep) + fact("Cook", r.cook) + fact("Total", r.total) + fact("Yield", r.yield);
+
+      el.innerHTML = `
+        <a class="back-link" href="recipes.html?type=${encodeURIComponent(cat.id)}">← Back to ${escapeHtml(cat.name)}</a>
+        <div><span class="badge">${cat.emoji} ${escapeHtml(cat.name)}</span></div>
+        <h1>${escapeHtml(r.title)}</h1>
+        ${r.subtitle ? `<p class="lead">${escapeHtml(r.subtitle)}</p>` : ""}
+        ${facts ? `<div class="facts">${facts}</div>` : ""}
+        ${r.sections.map((s) => {
+          const checkable = s.heading && !NOT_INGREDIENTS.test(s.heading);
+          return `<section class="recipe-section${s.heading ? "" : " intro"}">
+            ${s.heading ? `<h2>${escapeHtml(s.heading)}</h2>` : ""}
+            ${s.blocks.map((b) => blockHtml(b, checkable)).join("")}
+          </section>`;
+        }).join("")}
+        <p class="print-link"><button class="btn" type="button" onclick="print()">Print recipe</button></p>
+      `;
+    });
+  </script>
+</body>
+</html>

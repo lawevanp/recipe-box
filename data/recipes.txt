@@ -1,0 +1,2395 @@
+RECIPE BOX - RECIPE FILE
+Every recipe on the website comes from this file.
+
+HOW TO ADD A RECIPE
+  Paste it at the end, after a line of dashes, in this layout:
+
+    RECIPE TITLE
+    Category: dessert
+    Prep 10 min | Cook 20 min | Serves 4      (optional, any notes here)
+
+    Ingredients:
+    - 1 cup flour
+    - 2 eggs
+
+    Directions:
+    1. First step.
+    2. Second step.
+
+  Category must be one of:
+    breakfast, entree, side, soup, bread, dessert, snack, sauce
+  A short line ending in ":" starts a new section (Ingredients:, Frosting:, Notes:, ...).
+  Lines starting with "- " become a list; lines starting with "1. " become numbered steps.
+  Anything else is shown as a paragraph.
+
+HOW TO REMOVE A RECIPE
+  Delete everything from its title down to the next line of dashes.
+
+============================================================
+PEANUT BUTTER COOKIES
+Category: dessert
+Prep: 15 min | Cook: 15 min | Oven: 350°F | Serves: 4 x 12
+
+Ingredients:
+- 1 cup butter
+- 1 cup creamy peanut butter
+- 3/4 cup sugar
+- 3/4 cup brown sugar
+- 2 large eggs, room temp
+- 1 tsp vanilla extract
+- 1/2 tsp water
+- 2 1/4 cups flour
+- 1 tsp salt & 1 tsp baking soda
+
+Directions:
+1. Cream together butter, peanut butter, and sugars.
+2. Add eggs one at a time.
+3. Beat in vanilla & water.
+4. In separate bowl, combine remaining dry ingredients.
+5. Mix together both mixtures.
+6. Drop by Tbsp & flatten with fork.
+7. Bake at 350°F, 11-14 min.
+
+------------------------------------------------------------
+
+BUTTERY APPLE POUND CAKE
+Category: dessert
+(Ingredient card only — full recipe at julieblanner.com)
+
+Ingredients:
+- 1 1/2 cups white granulated sugar
+- 1/2 teaspoon cinnamon
+- 3 eggs
+- 2 cups all-purpose flour
+- 3/4 cup milk
+- 2 teaspoons vanilla extract
+- 2 apples, peeled and chopped
+- 6 tablespoons butter, unsalted
+- 3 cups powdered sugar
+- 2 teaspoons vanilla
+- 3 tablespoons heavy cream
+
+------------------------------------------------------------
+
+BAKED PENNE PASTA
+Category: entree
+(From the "grandma house cookbook")
+
+Ingredients:
+- 4-6 sausage links, sliced
+- 4 garlic cloves, minced
+- 2 large any-color bell peppers (chop large)
+- 1 large red onion, chopped
+- 2-4 Tbsp cooking wine/grape juice
+- 1 can canned tomatoes, 28 oz (794 g)
+- 1 can tomato puree, 15 oz (425 g)
+- 1/4 tsp black pepper
+- 1 lb penne pasta (454 g)
+- 8 oz mozzarella, cut in small chunks (226 g)
+- 1/2 c. grated parmesan (or cheese that melts)
+
+Directions:
+Brown sausage in skillet over medium heat (you can also use ground sausage). Drain any fat. Add peppers, onion & garlic. Saute 8 minutes. Add wine/juice. Add tomatoes, puree, salt & pepper, breaking up tomatoes with spoon. Reduce heat to low. Cover, simmer 10 minutes. Preheat oven to 400°F/204°C. Boil pasta according to directions. Drain pasta, add tomato mixture, add mozzarella and mix well. Pour into a sprayed 9x13" dish and top with Parmesan or a white cheese that melts. Bake 25 minutes or till bubbly.
+
+------------------------------------------------------------
+
+BEEF STROGANOFF
+Category: entree
+(Worcestershire sub: 1/2 Tbsp ketchup, 1/2 Tbsp vinegar, 1/4 Tbsp soy sauce)
+
+Ingredients:
+- 1 Tbsp olive oil
+- 1/2 medium onion, diced
+- 1 lb lean ground beef
+- 2 garlic cloves, minced
+- 2 Tbsp flour
+- 1 cup beef broth
+- 1 cup whipping cream
+- 1/3 cup sour cream
+- 1 Tbsp Worcestershire sauce
+- 1/2 tsp salt, adjust to taste
+- 1/4 tsp ground black pepper
+
+Directions:
+Dice onion in tiny bits, then saute in olive oil till clear. Add ground beef and break up with spatula as you cook till well done. Add minced garlic and saute with beef for 4 more minutes. In a small mixing bowl, whisk flour and cool beef broth (can use Maggi). Add to bowl, cream/s, Worcestershire, salt & pepper. Mix till all incorporated and add to beef. Heat all till bubbly. Garnish with chopped parsley (opt). And serve over cooked pasta or rice.
+
+------------------------------------------------------------
+
+CHICKEN MARINADE (Mom On Timeout)
+Category: sauce
+(Screenshot shows ingredients only)
+
+Ingredients:
+- 1/2 cup extra virgin olive oil
+- 1/2 cup balsamic vinegar (or other vinegar)
+- 1/4 cup soy sauce (low sodium)
+- 1/4 cup Worcestershire sauce
+- 1/8 cup lemon juice
+- 3/4 cup brown sugar
+- 2 teaspoons dried rosemary
+- 2 tablespoons Dijon mustard (or spicy brown mustard)
+- 1 1/2 teaspoons salt
+- 1 teaspoon ground black pepper
+- 2 teaspoons garlic powder
+- 6 chicken breasts or 3.5 lb chicken
+
+------------------------------------------------------------
+
+APPLE CRISP
+Category: dessert
+6 servings; 295 calories per serving
+
+Ingredients:
+- 4 cups sliced tart apples (about 4 medium)
+- 2/3 to 3/4 cup packed brown sugar
+- 1/2 cup all-purpose flour*
+- 1/2 cup oats
+- 1/3 cup margarine or butter, softened
+- 3/4 teaspoon ground cinnamon
+- 3/4 teaspoon ground nutmeg
+
+Directions:
+Heat oven to 375°F. Arrange apples in greased square pan, 8x8x2 inches. Mix remaining ingredients; sprinkle over apples.
+Bake until topping is golden brown and apples are tender, about 30 minutes. Serve warm and, if desired, with cream or ice cream.
+*Self-rising flour can be used in this recipe.
+
+Variations:
+- Apricot Crisp: Substitute 2 cans (17 oz each) apricot halves, drained, for the apples, and use the lesser amount of brown sugar.
+- Cherry Crisp: Substitute 1 can (21 oz) cherry pie filling for the apples, and use the lesser amount of brown sugar.
+- Peach Crisp: Substitute 1 can (29 oz) sliced peaches, drained, for the apples, and use the lesser amount of brown sugar.
+- Pineapple Crisp: Substitute 2 cans (13 1/2 oz each) pineapple chunks, drained, or 2 cans (20 oz each) crushed pineapple, drained, for the apples, and use the lesser amount of brown sugar.
+
+------------------------------------------------------------
+
+CREAM PUFFS
+Category: dessert
+
+Puffs:
+- 1 C. water
+- 1/2 C. butter
+- 1 C. flour
+- 4 eggs
+Boil water & butter. Add flour. Cook till it forms a ball. Add eggs 1 at a time. Mix very well after each egg. With spoon form into 2-inch diameter balls, 2 inches apart. Bake at 400°F for 40-45 minutes.
+
+Filling:
+- 3/4 C. sugar
+- 1/2 C. flour
+- Little salt
+- 2 egg yolks
+- 2 C. scalded milk
+- 1 tsp vanilla
+- 1/2 C. whipped cream
+Mix dry, add to milk, cook 2-3 min. Add yolk, cook 2-3 min. Cool. Add vanilla & whipped cream.
+
+------------------------------------------------------------
+
+SCALLOPED POTATOES
+Category: side
+
+Ingredients:
+- 1 quart heavy cream (a later copy of this recipe crosses out "2 quarts" and writes 1)
+- 2 tablespoons onion powder
+- 1 tablespoon chicken stock base
+- 1 tablespoon garlic powder
+- 3 cups fontina cheese / white cheddar (hand shredded)
+- 6.5 potatoes, skinned and cleaned
+- Tabasco, 3 Tbsp
+
+Instructions:
+1. Slice potatoes super thin and put in water.
+2. Mix onion, garlic, base, cream, Tabasco.
+3. Spray your pan very well.
+4. Put a bottom layer of cream mixture and cheese to cover the pan.
+5. Layer potatoes in a weave.
+6. Every two layers put more cream mixture and cheese.
+7. Finish top with leftover cheese and cream mixture.
+8. Bake at 325°F covered for 1.5 hrs or until potatoes are soft in the middle. (Original said 450°F; the updated copy corrects it to 325°F.)
+9. Uncover & bake for 30 more minutes. (Handwritten addition on the updated copy.)
+
+To serve: put potatoes in an oven-safe bowl, cover the top with cheese and put in oven on broil on high till cheese is melted.
+
+------------------------------------------------------------
+
+GREAT-GRANDMOTHER'S CHERRY CAKE (Elfriede Therese Matthiessen)
+Category: dessert
+
+Ingredients:
+- 1 C. butter  } cream together
+- 2 C. sugar   }
+- 1/3 t. salt (crossed out on the card — see "Add" note below)
+- 1/2 C. milk
+- 4 t. baking powder (see note)
+- 3 C. flour
+- 7 egg whites — beat stiff, fold in at the end
+- 1/2 t. almond extract
+- 1 t. vanilla extract
+- 1 C. candied cherries
+
+Bake 350°F in loaf pan, 1 hour.
+
+Add:
+- 1/4 t. salt
+- 1 1/4 C. chocolate chips
+
+Notes:
+* Batter will be stiff until whites added.
+* 3 t. baking powder (rather than 4) to prevent fall.
+
+------------------------------------------------------------
+
+ZUCCHINI BREAD
+Category: bread
+
+Ingredients:
+- 2 cups sugar
+- 1 cup canola oil
+- 3 large eggs, room temperature
+- 2 teaspoons vanilla extract
+- 3 cups all-purpose flour
+- 1 teaspoon salt
+- 1 teaspoon baking soda
+- 1 teaspoon ground cinnamon
+- 1/4 teaspoon baking powder
+- 2 cups shredded zucchini (about 2 medium)
+- 1/2 cup chopped walnuts or pecans
+
+Directions:
+1. Preheat oven to 350°F. Grease two 8x4-in. loaf pans. In a large bowl, beat sugar, oil, eggs and vanilla until well blended. In another bowl, whisk flour, salt, baking soda, lemon zest, cinnamon and baking powder; gradually beat into sugar mixture, mixing just until moistened. Stir in zucchini and walnuts.
+2. Transfer to prepared pans. Bake 55-65 minutes or until a toothpick inserted in center comes out clean. Cool 10 minutes before removing from pans to wire racks to cool.
+
+Ingredients halved:
+- 1 cup sugar
+- 1/2 cup canola oil
+- 1 whole egg + 1 egg white
+- 1 teaspoon vanilla extract
+- 1 1/2 cups all-purpose flour
+- 1/2 teaspoon salt
+- 1/2 teaspoon baking soda
+- 1/2 teaspoon ground cinnamon
+- 1/8 teaspoon baking powder
+- 1 cup shredded zucchini
+- 1/4 cup chopped walnuts or pecans
+
+------------------------------------------------------------
+
+ZUCCHINI BREAD (cookbook version #1, p. 19)
+Category: bread
+
+Ingredients:
+- 3 eggs (whipped)
+- 1 C. oil
+- 2 C. sugar (or 1 C. white sugar & 1 C. brown sugar)
+- 3 C. zucchini (ground or medium grated)
+- 3 tsp. vanilla
+- 3 C. flour
+- 1 tsp. salt
+- 1 tsp. soda
+- 1 tsp. ginger
+- 1 tsp. cloves
+- 3 tsp. cinnamon
+- 1/4 tsp. baking powder
+- 1/2 C. chopped nuts (raisins or dates)
+
+Directions:
+Whip eggs; add oil. Add rest of ingredients. Mix and bake in a bundt or 2 loaf pans at 350°F for 1 hour. Be sure to grease the pan.
+
+------------------------------------------------------------
+
+ZUCCHINI BREAD (cookbook version #2, p. 19)
+Category: bread
+
+Ingredients:
+- 2 C. sugar
+- 3 eggs
+- 1 C. oil
+- 3 C. flour
+- 1 tsp. vanilla
+- 1 tsp. baking soda
+- 1/2 tsp. baking powder
+- 1 tsp. salt
+- 1 scant tsp. cinnamon
+- 2 C. grated zucchini
+- 1 C. raisins (steam & let sit for 1 hour; drain)
+- Nuts, cherries or pineapple (optional)
+
+Directions:
+Beat sugar, eggs, and oil until fluffy. Add flour, vanilla, baking soda, baking powder, salt, and cinnamon. Stir in zucchini and raisins. Fill 2 loaf pans 1/2 full. Bake at 325°F for 3/4 to 1 hour.
+
+------------------------------------------------------------
+
+WHOLE WHEAT ZUCCHINI BREAD
+Category: bread
+
+Ingredients:
+- 3 beaten eggs
+- 1 cup vegetable oil
+- 2 cups brown sugar, firmly packed
+- 2 cups ground zucchini
+- 2 tablespoons vanilla extract
+- 3 cups whole wheat flour
+- 1 teaspoon baking soda
+- 1 teaspoon salt
+- 1/4 teaspoon baking powder
+- 3 teaspoons cinnamon
+- 1 cup chopped nuts
+
+Directions:
+Mix together eggs, oil, brown sugar, zucchini and vanilla extract in a large bowl.
+In a separate bowl, combine flour, baking soda, salt, baking powder and cinnamon. Add flour mixture to zucchini mixture, stir until smooth. Fold in nuts.
+Pour batter into large loaf pan, or two smaller ones.
+Bake at 325°F for 75 minutes, or until a wooden pick inserted in the center comes out clean.
+
+------------------------------------------------------------
+
+WHOLE WHEAT ZUCCHINI BREAD (WITH HONEY)
+Category: bread
+
+Ingredients:
+- 3 eggs
+- 2 C. zucchini*
+- 1 1/2 C. honey
+- 2 tsp. baking powder
+- 3 tsp. cinnamon
+- 1 C. chopped walnuts
+- 2 tsp. vanilla
+- 1 C. oil*
+- 1 tsp. baking soda
+- 4 1/2 C. wheat flour
+- 1 tsp. salt
+
+*Note: I cut the zucchini in cubes and put in blender with oil and blend until smooth.
+
+Directions:
+Beat eggs until light. Add next four ingredients and mix well using electric mixer. In a separate bowl, mix 4 1/2 C. whole wheat flour, cinnamon and salt. Blend the dry ingredients with the egg mixture and 1 C. chopped walnuts. For variety add any combination of the following ingredients:
+- 1 C. raisins
+- 1 C. dried cherries
+- 1 can crushed pineapple (increase flour by 1/2 C.)
+
+Bake at 325°F for 1 hour. Makes 2 loaves. This freezes very well!
+
+------------------------------------------------------------
+
+BANANA PUDDING
+Category: dessert
+
+Ingredients:
+- 2 boxes (5.1 oz each) French vanilla pudding mix (can be replaced with cheesecake pudding mix)
+- 1 box Nilla wafer cookies
+- 1-2 bananas
+
+Directions:
+Mix puddings according to instructions then set aside. Line glass serving bowl with cookies. Slice up bananas. Put down a layer of pudding in the serving dish and some slices of banana into the pudding. Add some cookies on top to differentiate the layers. Line the edges of the dish with cookies as you fill up the sides with more layers of pudding and bananas. Top with cookies and refrigerate for 4 hours, or eat right away!
+
+------------------------------------------------------------
+
+CHICKEN TETRAZZINI
+Category: entree
+
+Ingredients:
+- 8 oz spaghetti, cut in 2-in pieces, cooked in chicken broth (I usually just cook in water)
+- 1 can cream of mushroom soup
+- 1 can cream of chicken soup
+- 4 cups diced, cooked chicken
+- 1 1/2 cups sharp cheddar cheese
+- 1/2 cup chopped pimento (minced red bell pepper)
+- 1/2 cup minced green bell pepper
+- 1/4 - 1/2 cup minced onion
+- Salt & pepper
+
+Directions:
+Cook and bone chicken (reserve the broth). Cut in small pieces.
+Cook spaghetti in chicken broth.
+Saute onions and peppers in 2 Tbsp of oil or margarine.
+Mix soups together and combine with pimento, chicken and a little salt and pepper. Mix well.
+Layer spaghetti, chicken, sauce and grated cheese and repeat.
+Bake at 400°F for 25 minutes in 9x13-in pan.
+
+------------------------------------------------------------
+
+SNICKERDOODLES
+Category: dessert
+Makes 6 dozen cookies
+
+Ingredients:
+- 1 1/2 C. sugar
+- 1 C. butter
+- 2 eggs
+- 2 3/4 C. flour
+- 2 tsp cream of tartar
+- 1 tsp baking soda
+- 1/4 tsp salt
+- 3 Tbsp sugar (for rolling)
+- 3 tsp cinnamon (for rolling)
+
+Directions:
+Mix sugar, butter & eggs in large bowl. Mix in remaining ingredients. Shape into balls. Roll in mix of 3 T. sugar / 3 t. cinnamon. Place on cookie sheet 2 inches apart. Bake at 400°F for 8 minutes.
+
+------------------------------------------------------------
+
+KING RANCH CHICKEN
+Category: entree
+
+Ingredients:
+- 1 can cream of chicken soup
+- 16 oz sour cream
+- 1/2 C. picante sauce
+- 1 boiled chicken with broth
+- 2 Tbsp. chili powder
+- 3 Tbsp garlic powder
+- 1-2 chicken bouillon cubes
+- 3 cups shredded cheddar cheese
+- Tortilla chips
+
+Directions:
+Debone chicken, put in pan with a cup of broth, chili powder, garlic powder & bouillon. Let broth boil off. Make sauce by adding to a bowl: cream of chicken soup, sour cream & picante sauce. In pan layer sauce, chips, chicken and cheese in that order. Bake at 350°F for about 1 hour.
+
+Note (from Raschel): The main part of the recipe is the chicken. Get chicken parts and double the amount of chicken because it takes a long time to cook — e.g. 4 thighs, 4 legs, 4 breasts... or all dark meat is fine too (dark meat actually works better in this recipe).
+
+------------------------------------------------------------
+
+1910 GREAT GRANDMOTHER CHERRY CAKE (low-carb version)
+Category: dessert
+Recipe by Raschel Sadler
+
+Ingredients:
+- 1/2 C. butter or coconut oil
+- 1/2 C. erythritol
+- 1/2 (C.) Splenda or stevia
+- 5 eggs
+- 2 tsp. almond extract
+- 2 C. almond flour/meal
+- 1 tsp. baking powder
+- 1/4 C. chopped, no-sugar-added dried cherries (or cranberries)
+- 1/4 C. chopped SF (sugar-free) chocolate chips
+
+Directions:
+Mix first 5 ingredients together. Pour almond flour atop the wet mixture. Stir the baking powder just into the top of the almond flour a little, then mix it all together with the wet mixture. Chop up the cherries & chocolate chips with a sharp knife or chopper and stir into the cake mixture (pecans may be added if desired). Pour mixture into a bread pan lined with foil. Bake at 350°F for 50 minutes.
+
+Carb notes (sticky note):
+- Erythritol: 24 carbs for 1/2 C.
+- Splenda: 12 carbs for 1/2 C.
+- Almond flour: 48 carbs for 2 C.
+- Cherries: 36 carbs for 1/4 C. (sweetened)
+- Chocolate chips: 34 carbs for 1/4 + 1/8 C.
+= 154 carbs for the whole thing
+
+Carb notes (second card, "Great Grandmother Cake"):
+- Erythritol: 96 carbs
+- Splenda: 12 carbs
+- Eggs: 3 carbs
+- Flour (almond): 32 carbs
+- Stevia chocolate chips: 25.14 carbs
+- Cherries: 46.5 carbs
+Total: 215 carbs / 12 = 18 carbs per slice
+
+------------------------------------------------------------
+
+PERFECT CHOCOLATE CHIP COOKIES (Mommy's)
+Category: dessert
+
+Ingredients:
+- 1 C. butter
+- 1/2 C. shortening
+- 1 1/2 C. brown sugar
+- 1 C. sugar
+- 2 eggs
+- 4 tsp vanilla
+- 4 C. flour
+- 4 tsp cornstarch
+- 2 tsp baking soda
+- 1/2 tsp cinnamon
+- 1 tsp salt
+- 3 cups chocolate chips
+
+Directions:
+1. Cream together butter, shortening, sugars, eggs and vanilla till light & fluffy.
+2. Mix dry ingredients (flour, cornstarch, baking soda, cinnamon, salt) together, then add to above mixture using a spoon.
+3. Stir in chocolate chips till flour is no longer visible.
+4. Bake at 350°F - 10 min.
+
+------------------------------------------------------------
+
+CARROT CAKE
+Category: dessert
+
+Ingredients:
+- 2 cups sugar
+- 2 teaspoons baking soda
+- 1 cup butter
+- 1/4 cup vegetable oil
+- 4 eggs, well-beaten
+- 2 teaspoons ground cinnamon
+- 1 teaspoon ground allspice
+- 1/2 teaspoon ground cloves
+- 3 cups grated carrots
+- 2 cups all-purpose flour
+- 1 teaspoon baking powder
+- 1 teaspoon vanilla extract
+- 1/2 teaspoon salt
+- Cream Cheese Frosting (below)
+
+Directions:
+Cream sugar, butter, oil, and eggs. Add remaining nine ingredients and mix well. Pour batter into 3 greased and floured round cake pans. Bake for 30 minutes at 350°F or until done. Cool and frost with Cream Cheese Frosting.
+
+Cream Cheese Frosting:
+- 1 (8 oz) package softened cream cheese
+- 1 stick butter
+- 1 (16 oz) box powdered sugar
+- 1 teaspoon vanilla
+Cream together cream cheese and butter, add powdered sugar and vanilla and beat till smooth.
+
+------------------------------------------------------------
+
+BROWNIES (Mommy's) — "Double the recipe for a group" version
+Category: dessert
+(Photo only shows this section; the original single-batch directions aren't in the picture.)
+
+Ingredients:
+- 2/3 cup butter
+- 2 1/2 cups sugar
+- 2 tsp vanilla
+- 4 large eggs
+- 1 cup cocoa powder
+- 1 tsp salt
+- 1 cup flour
+
+Directions:
+Follow above (original) directions using a 9x13 rectangular cake pan. Bake 40-45 minutes. Cut into 24 squares.
+
+------------------------------------------------------------
+
+OUR CONFERENCE BREAKFAST CASSEROLE (Make the night before)
+Category: breakfast
+
+Ingredients:
+- 1 lb. bulk sausage
+- 4 eggs
+- 3 cups milk
+- 2 cups grated cheese
+- 1 cup Bisquick
+- 1/2 teaspoon dill
+- 1/2 teaspoon dried mustard
+
+Directions:
+Cook bulk sausage in skillet till done, breaking up in small pieces. Spread cooked bulk sausage in 13x9 casserole dish. Mix remaining six ingredients together and pour over cooked bulk sausage. Cover and place in the refrigerator overnight. Bake at 350°F for 30 minutes or until done. (Stick a knife in the casserole; if it comes out clean the casserole is done.) We serve the Breakfast Casserole with fresh fruit and juice. Great on Christmas morning.
+
+------------------------------------------------------------
+
+SPANISH STYLE RICE
+Category: side
+(Handwritten note: "good with Mexican food")
+
+Ingredients:
+- 1 Tbsp oil
+- 1 cup uncooked rice
+- 1 (10 oz) can chicken broth
+- 1 cup water
+- 1/2 cup picante sauce
+- 1/2 tsp. ground cumin
+- 1/4 tsp. garlic powder
+- 1 medium tomato, chopped
+
+Directions:
+In skillet over medium heat, heat oil. Add rice and brown it. Stir in broth, water, picante sauce, cumin & garlic. Heat to a boil. Cover & simmer over low heat for 15 minutes.
+(The photo is cut off here — the step for adding the tomato isn't visible; it's likely stirred in at the end.)
+
+------------------------------------------------------------
+
+NANAIMO BARS
+Category: dessert
+
+Bottom layer:
+- 1/2 C. butter
+- 1/4 C. sugar
+- 5 T. cocoa
+- 1 egg
+- 1 3/4 C. graham cracker crumbs
+- 3/4 C. coconut
+- 1/2 C. finely chopped walnuts
+Melt first 3 ingredients in HEAVY saucepan. Add beaten egg and stir. Remove from heat. Stir in crumbs, coconut, and nuts. Press firmly in ungreased 9x9-in pan.
+
+2nd layer:
+- 1/2 C. butter
+- 3 Tbsp milk
+- 2 T. custard powder (vanilla)
+- 2 C. icing sugar
+Beat all ingredients till light. Spread over bottom layer.
+
+3rd layer:
+- 2/3 C. semisweet chocolate chips
+- 2 T. butter
+Melt chips & butter over low heat. When cool (not hard), spread over 2nd layer. Chill completely in fridge. Cut with sharp knife.
+
+Note on custard powder (from a message): "Vanilla custard powder" is essentially vanilla-flavored corn starch, but using just corn starch turns out a bit weird. Instead use 1.5 Tbsp cook-and-serve vanilla pudding powder + 1/2 Tbsp corn starch. Any nut works in the crust — pecans, walnuts, or almonds.
+
+------------------------------------------------------------
+
+MICROWAVE CARAMEL CORN
+Category: snack
+
+Ingredients:
+- 2 pitchers of popped corn
+- 1 cup brown sugar
+- 1/2 cup butter
+- 1/4 cup corn syrup (Karo)
+- A little salt
+- 1 paper bag
+
+Directions:
+1. Bring all ingredients to a boil (except for popcorn).
+2. Cook 1 minute longer.
+3. Put popcorn in bag and pour caramel over it.
+4. Fold top of bag and shake for 1 minute (bag will get hot).
+5. Put bag in microwave for 2 minutes on HIGH.
+6. Remove and shake for 1 minute.
+7. Put bag back in microwave for 2 minutes on HIGH.
+8. Remove and shake for 1 minute.
+9. Pour out on clean table and let cool (VERY HOT!!!!)
+
+------------------------------------------------------------
+
+DOUBLE FUDGE BROWNIES (Grandma's)
+Category: dessert
+Recipe by Joyce Hanlon | Yield: 24
+
+Ingredients:
+- 3/4 cup all-purpose flour
+- 3 tablespoons unsweetened cocoa
+- 1/4 teaspoon baking soda
+- 1/8 teaspoon salt
+- 1/2 cup pecans, or more if desired
+- 6 oz semisweet chocolate (1 cup choc. chips)
+- 6 tablespoons butter
+- 1 cup sugar
+- 1 teaspoon vanilla extract
+- 2 large eggs
+
+Directions:
+Preheat oven to 350°F and grease & flour an 8- or 9-inch square pan. Sift flour, cocoa, baking soda, and salt. Coarsely chop pecans. Melt butter and chocolate over low heat, stirring till all chocolate is melted, & remove from heat. Stir in the sugar & vanilla. Cool mixture for 10 minutes. Whisk in eggs and beat batter till all incorporated. Stir in the flour mixture and then the nuts and mix only until the batter is just blended. Spread batter evenly in prepared pan. Bake on the middle rack in the oven for 25-30 minutes. Keep in pan for at least 2 hours before cutting.
+(Picture on card was baked in an 8x8 pan.)
+
+------------------------------------------------------------
+
+PIZZA (dough)
+Category: bread
+
+Ingredients:
+- 1 1/2 Tbsp yeast
+- 2 tsp white sugar
+- 2 C. warm water (almost hot)
+- 4 Tbsp oil
+- 2 tsp salt
+- 5 C. flour
+
+Directions:
+Mix the yeast, sugar and water together and let it sit and grow for 5 minutes.
+Add the last 3 ingredients (oil, salt, flour), mix well and knead for 3-5 minutes. Divide into 2 or 3 balls for 2 or 3 pizzas. Flatten out a ball with your hands into a circle on some foil or baking sheet to about 1/2 - 1/4 inch thickness (depending how bready you like it). Add pizza sauce, cheese & toppings. Bake 17 minutes. Without a pizza cutter, you can use scissors to cut.
+(Oven temperature isn't listed on the card.)
+
+------------------------------------------------------------
+
+RASCHEL'S SPICE CAKE
+Category: dessert
+
+Ingredients:
+- 1 3/4 C. flour
+- 1 1/2 C. sugar
+- 1 1/4 tsp. soda
+- 1 tsp. salt
+- 1 1/2 tsp cinnamon
+- 1 tsp cloves
+- 1/8 C. cocoa
+- 1/2 C. oil
+- 1 C. milk
+- 1 tsp. vanilla
+- 2 eggs
+
+Directions:
+Mix dry ingredients well. Mix in remaining ingredients well. Bake in a tube or medium-sized cake pan that's been greased and floured, or line your pan with foil and grease it so it doesn't stick to the pan. Bake at 180°C (about 350°F) for 30 minutes.
+
+------------------------------------------------------------
+
+RASCHEL'S FRESH SALSA
+Category: snack
+
+Ingredients:
+- 1 small onion (3/4 C.)
+- 8 medium tomatoes (1 kg)
+- 1 Tbsp chili powder
+- 2 tsp salt
+- Spicy fresh pepper or cayenne
+- 1/4 tsp garlic powder (or 1 clove fresh)
+- 1/4 tsp cumin
+- 1 C. fresh cilantro, loosely packed
+- 1 Tbsp lime juice
+
+Directions:
+Chop up 2 tomatoes finely. Chop up 1/4 of the onion finely and chop up 1/4 of the cilantro finely. Set chopped veggies to the side. Cut up the remaining ingredients in large cuts and put in the blender with spices. You don't want to blend it too long... maybe 10-second intervals... stirring in between... total of 40 seconds. Lastly stir in the chopped tomato, onion & cilantro. SERVE!
+
+------------------------------------------------------------
+
+LEMON POPPY SEED CAKE/LOAF
+Category: dessert
+
+Ingredients:
+- 1 1/4 C. flour
+- 1 C. sugar
+- 1 Tbsp. poppy seeds
+- 1 Tbsp. lemon zest (grated rind)
+- 1 tsp baking powder
+- 1/2 tsp salt
+- 3/4 C. butter, melted
+- 2/3 C. milk
+- 2 eggs
+- 1 tsp. vanilla
+
+Glaze:
+- 1/2 C. powdered sugar
+- 1 Tbsp lemon juice
+
+Directions:
+Grease your bread pan & preheat the oven to 180°C (about 350°F). Mix all dry ingredients together including zest. Mix all wet ingredients together till eggs are well incorporated. Combine 2 mixtures, not over-mixing. Spoon into bread pan and bake 1 hour. Whisk powdered sugar and lemon juice and drizzle over warm loaf.
+
+------------------------------------------------------------
+
+RASPBERRY-OATMEAL BARS (use any flavor of jam)
+Category: dessert
+
+Ingredients:
+- 1 cup packed brown sugar
+- 2 cups flour
+- 1/4 tsp salt
+- 2 cups rolled (quick) oats
+- 1 cup butter or margarine
+- 1 1/4 cup raspberry jam (240-250 g)
+
+Directions:
+Combine all dry ingredients and mix well with hands. Add softened butter/margarine. Continue to mix till all incorporated. Press a little more than half the mixture into a 9x13 pan, patting it down all over. Save the rest of the oat mixture. Spread the jam evenly over the pressed oat mixture. Sprinkle the remaining oat mixture evenly on top of the jam.
+Bake at 350°F or 180°C for 25 minutes.
+
+------------------------------------------------------------
+
+TUSCAN CHICKEN
+Category: entree
+
+Ingredients:
+- Pam or other spray oil
+- 4 boneless skinless chicken breasts
+- Salt
+- Black pepper
+- 1 tsp. dried oregano (*or herb mix)
+- 3 tbsp. olive oil
+- 6 cloves garlic, minced (jarred is fine)
+- 3 c. cherry tomatoes, halved (or 6 romas sliced long)
+- 6 c. baby spinach (almost a full 6 oz bag)
+- 1.5 c. heavy cream
+- 1/2 c. Parmesan cheese (powdered style okay)
+
+Directions:
+Spray a skillet with Pam & heat over medium-high. Add chicken seasoned with salt, pepper, and oregano. Cook until golden and no longer pink, 8 minutes per side. Remove & set chicken to the side. (You can also cut raw chicken into medallion-sized pieces before cooking.)
+In skillet used for the chicken, heat oil & stir in garlic & tomatoes seasoned with salt and pepper. Cook about 5 minutes. Add heavy cream and Parmesan and bring mixture to a simmer. Then add the chicken and spinach. Return chicken to skillet and cook until heated through, about 10 minutes. Serve plain or with pasta.
+*I seasoned this extra with some "herbes de Provence"... Italian seasoning also works well in this.
+
+------------------------------------------------------------
+
+LASAGNA (Skinner Oven Ready box recipe)
+Category: entree
+
+Ingredients:
+- 1 lb. ground beef
+- 3 cups (about 26 oz. jar) pasta sauce
+- 1 3/4 cups (15 oz.) ricotta cheese
+- 1 egg, slightly beaten
+- 1/2 tsp dried basil leaves
+- 1/2 tsp dried oregano leaves
+- 12 pieces Skinner Oven Ready Lasagna, uncooked
+- 4 cups mozzarella cheese, shredded
+- 1/4 cup grated Parmesan cheese
+
+Preparation:
+Remove 12 pieces of pasta from package. Heat oven to 400°F. In large skillet, cook meat until browned; remove from heat and drain. Stir in pasta sauce. In a small bowl, stir together ricotta cheese, egg, basil and oregano.
+
+Assembly:
+In a 13x9x2-inch greased baking dish, spread 3/4 cup meat sauce. Place 3 pieces uncooked pasta crosswise over sauce. Pieces should not overlap or touch side of the pan. Spread 2/3 cup of ricotta mixture evenly over pasta. Spread 3/4 cup meat sauce evenly over ricotta, covering pasta completely; sprinkle with 1 cup mozzarella cheese. Repeat steps 2 and 3 TWO more times. Top with remaining 3 pieces of pasta. Spread remaining meat sauce completely over pasta; sprinkle with remaining mozzarella and Parmesan cheese. Cover with aluminum foil and bake 35 minutes. Remove foil and bake an additional 5-10 minutes uncovered. Let stand 5 minutes before cutting.
+
+Microwave directions:
+In microwave-safe dish, prepare recipe as directed; omit mozzarella and Parmesan cheese on top layer. Cover with plastic wrap. Microwave on HIGH (100%) 15-17 minutes, turning twice during cooking. Carefully remove plastic wrap; sprinkle with remaining mozzarella and Parmesan cheese. Replace plastic wrap. Microwave on HIGH 4 minutes or until bubbly. (Cooking time may vary based on size of microwave.)
+
+Make-ahead directions:
+Prepare recipe as directed; DO NOT BAKE. Cover with plastic wrap, and then cover with foil. Refrigerate up to 48 hours or freeze up to 2 months. Remove plastic wrap; replace foil. Bake refrigerated lasagna at 400°F about 45 minutes and frozen lasagna about 1 hour 35 minutes, removing foil during last 5 minutes of baking.
+
+Mom's lasagna tips (from a text conversation):
+- Layer order: a little sauce on the bottom, then 3 noodles, meat, sauce, ricotta, mozzarella; 3 noodles again... and repeat.
+- Ricotta: add an egg, some Italian seasoning and a bit of Parmesan.
+- Mozzarella: most people put it on every layer, but you can save cheese (money) by using it on just the top. Mom does that a lot.
+- Foil: no foil, or foil for half the time if you don't like a brown/crispy top — covering it increases the chance of runny lasagna. For this box recipe: 22 minutes covered and 22 minutes uncovered.
+
+------------------------------------------------------------
+
+FISH IN TOMATO SAUCE (from Guinea)
+Category: entree
+
+Ingredients:
+- 2 lbs fish (tilapia or perch works well)
+- 1 1/2 cups carrots (chopped in 1/8-in or smaller pieces)
+- 1 1/2 cups onions (chopped small)
+- "Mrs. Dash" (or dry pepper/garlic mixture, or other salt-free seasoning)
+- 2 cans tomato paste
+- 6 cups water
+- 1 tsp salt
+- Olive oil
+
+Directions:
+Cut fish into 1/2-inch pieces, then sprinkle one side of all the pieces with a little salt. Using a LARGE non-stick skillet (8-10 cup capacity), pour about 1/4 cup of olive oil into the pan. Place the fish pieces (touching is fine but separate) in the pan. You will not be able to fit all the fish in. Turn the stove on HIGH. Do not stir or flip. When all pieces turn white, flip or stir so that the other sides can brown. When browned on at least one side, put cooked fish pieces on a plate with a paper towel and start on another batch of fish... repeat until all fish is cooked. The fish will not be added until the end of the recipe.
+
+Put 3 Tbsp of olive oil in a SMALL-MEDIUM sized pan. Put carrots and onions into the pan. Sprinkle a little "Mrs. Dash" over these veggies. Saute carrots and onions in the oil until the onions come out clear.
+
+Using the large pan you cooked the fish in, put 2 cans of tomato paste, 6 cups of water and 1 tsp of salt. Mix well. Turn stove on MEDIUM heat. Add the sauteed veggies. Bring to a boil and simmer for 20 minutes.
+
+After the tomato sauce and veggies have reached 20 minutes, add the fish, stir a little, but be careful not to break up the fish.
+
+You are done... now serve over some rice.
+
+Note: In Guinea, they normally put small cut pieces of green pepper. I just don't care for the taste myself, so I just stick with the carrots and onion.
+
+------------------------------------------------------------
+
+TEXAS SHEET CAKE
+Category: dessert
+
+Preheat oven to 375°F. Grease sheet cake pan.
+
+In medium saucepan combine the following ingredients and bring to a boil:
+- 2 sticks butter
+- 1 cup water
+- 1/4 cup cocoa
+
+Remove from heat after boiling and add the following ingredients in order. Be sure it is thoroughly mixed.
+- 2 cups flour
+- 2 cups sugar
+- 1 tsp salt
+- 1 tsp baking soda
+- 1/2 cup sour cream
+- 2 eggs
+
+Pour into pan and spread evenly. Bake for 22 minutes.
+
+Frosting (make 5 minutes before cake is done):
+- 1 stick butter
+- 1/4 cup cocoa
+- 1/3 cup milk
+- 4 cups powdered sugar
+- 1 tsp vanilla
+Bring butter, cocoa and milk to a boil in small saucepan. Remove from heat and add 4 cups powdered sugar and 1 tsp vanilla. Stir out lumps and frost cake right away.
+
+------------------------------------------------------------
+
+CAROLE'S GERMAN APPLE CAKE
+Category: dessert
+
+Ingredients:
+- 2 eggs
+- 1 cup oil
+- 2 cups sugar
+- 1 tsp soda
+- 1 tsp vanilla
+- 2 cups flour
+- 2 tsp cinnamon
+- 1/2 tsp salt
+- 4 cups apples
+- 1/2 cup pecans
+
+Directions:
+Beat eggs & oil. Add sugar, soda, vanilla, cinnamon & salt. Add flour and mix by hand. Add sliced apples & pecans. Batter will be thick. Bake in greased 9x13-inch pan (or bundt). Bake at 350°F for 45-60 minutes.
+
+------------------------------------------------------------
+
+BANANA BREAD (Sariah's)
+Category: bread
+
+Ingredients:
+- 1 1/4 C. flour
+- 2 tsp. baking powder
+- 1/4 tsp. baking soda
+- 1/2 tsp. salt
+- 1 1/4 C. sugar
+- 2 eggs
+- 1 C. mashed bananas
+- 1/2 C. oil
+- 1 tsp. vanilla
+
+Directions:
+Preheat oven to 350°F or 175°C. Butter two bread pans. Stir together the dry ingredients. Stir in the wet ingredients. Pour into bread pans and bake for 45-55 minutes. Cool for 10 minutes before removing from pan.
+
+------------------------------------------------------------
+
+SCOTCHAROOS
+Category: dessert
+
+Ingredients:
+- 1 cup corn syrup
+- 1 cup white sugar
+- 1 cup peanut butter
+- 6 cups Rice Krispies (card says "48 cups for big pan" — at 4x it would be 24 cups)
+- 1 cup chocolate & butterscotch chips
+
+Directions:
+Microwave corn syrup and sugar for 3 mins. Stir and then add 1 cup peanut butter; stir until melted. Add 6 cups Rice Krispies. Spray a 9x13 pan (times everything by 4 for big pan), flatten in the pan. Melt 1 cup chocolate & butterscotch chips (takes about 3 mins). Spread on top; let chocolate harden before cutting.
+
+------------------------------------------------------------
+
+PEANUT BUTTER FUDGE
+Category: dessert
+(Faint note by title: "use wooden spoon")
+
+Ingredients:
+- 3 cups sugar
+- 1 1/2 cups brown sugar
+- 1 1/2 cups milk
+- 3 cups peanut butter
+- 3 cups marshmallow cream (13 oz jar)
+- 1 cup nuts
+
+Directions:
+Cook sugar, brown sugar and milk to soft ball (put stove on 7) (230° on current candy thermometer — note dated 11/30/07).
+Turn off heat. Add peanut butter, marshmallow cream and nuts.
+Put into 13x9-in greased pan.
+
+------------------------------------------------------------
+
+NO BAKE COOKIES
+Category: dessert
+
+Ingredients:
+- 2 cups sugar
+- 1/2 cup cocoa
+- 1/4 cup butter
+- 1/2 cup milk
+- 3 cups oatmeal
+- 1/2 cup peanut butter
+- 1 tsp vanilla
+
+Directions:
+Bring sugar, cocoa, butter and milk to a boil and boil for 1 minute. Remove from heat. Add oatmeal, peanut butter and vanilla.
+
+------------------------------------------------------------
+
+BRAIDED CHEESE BREAD
+Category: bread
+Yield: 4 loaves | Recipe by Joyce Hanlon
+
+Dough:
+- 1/2 cup butter
+- 1/3 cup powdered milk
+- 2 eggs
+- 2 tablespoons vanilla
+- 1 tablespoon sugar
+- 1/2 cup sugar
+- 1 3/4 cup water (plus 1/2 cup warm water for the yeast)
+- 3/4 tablespoon salt
+- 2 tablespoons yeast
+- 6 to 7 cups flour
+
+Cream cheese filling:
+- 2 (8 oz) pkgs. cream cheese, softened
+- 2 eggs (printed "1 egg", hand-corrected to 2)
+- 1/4 cup sugar
+
+Icing:
+- 4 cups powdered sugar
+- 1/4 cup butter
+- Milk to thin
+
+Directions:
+Melt butter in 1 3/4 cup of water, set aside to cool. In mixing bowl, add 2 Tbsp of yeast, 1 Tbsp sugar, and 1/2 cup of warm water. Let set till it proofs. After your yeast mixture proofs, add the cooled water/butter mixture, 1/2 cup of sugar, 3/4 Tbsp salt, 1/3 cup of powdered milk, 2 eggs and 2 Tbsp of vanilla. Mix well with mixer. Add rest of flour and mix by hand till dough comes away from sides. Knead on lightly floured surface for about 10 minutes. Form ball and put in greased bowl. Cover with plastic wrap and set in warm place till double in size. Punch down and let rest for about 5 minutes. Divide dough into 4 balls. Cover each with plastic wrap to keep from drying out. In a small mixing bowl mix cream cheese, egg and 1/4 cup sugar together and set aside for the "cream cheese filling".
+
+Assembling: Divide cream cheese mixture evenly into 4 different bowls or ziplock bags. Unwrap 1st ball. Shape it into a "log". Roll out to a 13x5-inch rectangle. Spread the cream cheese down the center of the rectangle, leaving 1 1/2 inch on each long side. Using a sharp knife, cut 11 slits on each 13" side. Starting at each end, braid to the center of loaf by crossing the left side then the right side, leaving the last 2 center strips (one on left & one on right). Carefully tie a knot with these 2 center strips. Place on a lined cookie sheet (2 loaves will fit on one standard cookie sheet). Let the braided loaves rise for 20 minutes then bake at 350°F for 20 minutes or till golden brown. While those 2 loaves are baking, prepare the other 2 loaves. Mix up icing in small mixing bowl. You want the icing only thin enough to be able to drizzle it over the loaf. Ice while still warm.
+
+If desired, raspberries or cherries, or a pie filling, can be added on top of the cream cheese mixture for a fruitier taste. Pecans can be added to the icing. Cherries can decorate the top for a more festive look.
+
+------------------------------------------------------------
+
+LEMON BARS
+Category: dessert
+
+Crust:
+- 2 C. flour
+- 1 C. powdered sugar
+- 1 C. butter, melted
+- 1/8 tsp. salt
+
+Filling:
+- 1/4 C. flour
+- 4 eggs
+- 2 C. sugar
+- 1 tsp baking powder
+- 1/2 C. lemon juice
+- 4 Tbsp powdered sugar (for dusting)
+
+Directions:
+Preheat oven to 350°F. Line 9x13" pan with foil, spray foil. In bowl, mix 2 cups flour, 1 cup powdered sugar, melted butter, and the salt with a fork till crumbly dough forms. Press dough into pan so it covers bottom and goes about 1/2 inch up the sides. Bake crust about 15 minutes or till it starts to turn golden.
+While crust bakes, whisk together 1/4 cup flour, eggs, granulated sugar, baking powder & lemon juice. Pull crust out of oven, pour lemon mixture over and return to bake for 30 more minutes or till center no longer jiggles.
+Cool lemon bars in pan 1 hour. Then refrigerate 1 hour before cutting. Dust top of lemon bars with powdered sugar.
+
+------------------------------------------------------------
+
+FROZEN PEPPERMINT CHEESECAKE
+Category: dessert
+From the kitchen of: (handwriting hard to read — looks like "Wann Porter") | Serves: 9-inch pan
+
+Ingredients:
+- 1 1/2 C. chocolate crumbs
+- 1/4 C. sugar
+- 1/4 C. butter
+- 1 (8 oz) cream cheese
+- 14 oz sweetened condensed milk
+- 1 C. peppermint candy
+- 3 drops red food coloring
+- 2 C. whipping cream, whipped
+
+Directions:
+Combine first 3 ingredients. Firmly press onto bottom & 1 inch up sides in springform pan.
+Beat cream cheese on high speed until fluffy; add condensed milk, candy & food coloring; beat well. Fold in whipped cream. Pour into prepared pan. Cover & freeze until firm.
+
+------------------------------------------------------------
+
+CHOCOLATE CAKE
+Category: dessert
+
+Cake:
+- 2 C sugar
+- 1 3/4 C flour
+- 3/4 C cocoa
+- 1 1/2 tsp baking powder
+- 1 1/2 tsp baking soda
+- 1 tsp salt
+- 2 eggs
+- 1 C milk
+- 1/2 C vegetable oil
+- 2 tsp vanilla
+- 1 C boiling water
+
+Frosting:
+- 1/2 C butter
+- 2/3 C cocoa
+- 3 C powdered sugar
+- 1/3 C milk
+- 1 tsp vanilla
+
+Directions:
+Heat oven to 350°F. Grease and flour two 9" round baking pans. Stir together sugar, flour, cocoa, baking powder, baking soda, and salt in a large bowl. Add eggs, milk, oil, and vanilla; beat on medium speed of mixer 2 minutes. Stir in boiling water (batter will be thin). Pour batter evenly into prepared pans. Bake 30-35 minutes or until toothpick inserted into center comes out clean. Cool 10 minutes; remove from pans to wire racks. Cool completely.
+To frost: melt butter, stir in cocoa, then alternate between adding powdered sugar and milk, beating to a spreading consistency. Add a small amount of additional milk, if needed. Stir in vanilla.
+
+------------------------------------------------------------
+
+ALMOND CROISSANT BABKA
+Category: bread
+(From a Facebook reel by Nowbynaturerecipes; footage @freyacox_)
+
+Dough:
+- 150 ml milk
+- 5 g instant yeast
+- 275 g strong white bread flour (or plain flour)
+- 25 g white sugar
+- 1/2 tsp salt
+- 80 g softened butter
+
+Filling (frangipane):
+- 80 g butter, melted
+- 80 g white sugar
+- 1/2 tsp almond extract (or vanilla if you don't have this)
+- 55 ml milk
+- Squeeze of lemon juice or splash of vinegar
+- 25 g plain flour
+- 110 g ground almonds
+- 1 tsp baking powder
+- Flaked almonds, to top
+
+Directions (condensed):
+1. Warm the milk in the microwave ~30 seconds (warm, not hot). Stir in the yeast and sugar and set aside.
+2. In a stand mixer with a dough hook, mix the flour and salt. Once the yeast is bubbly, add it and mix on low until almost combined. With the mixer on low, add the butter a little at a time until fully combined. Turn up to medium and knead 5 more minutes until smooth and elastic.
+3. Cover and let rise about 1 hour, until doubled.
+4. Filling: mix melted butter and sugar really well. Mix in the extract, milk and lemon juice. Finally mix in the flour, ground almonds and baking powder until smooth. Chill in the fridge while the dough finishes rising.
+5. Tip the risen dough onto a lightly floured surface and roll into a rectangle roughly 30x40 cm. Spread the frangipane all the way to the edges, then roll up from the longest side.
+6. Cut the log in half lengthways to make two long logs. Twist them together, pinching the top and bottom.
+7. Place in a 2 lb loaf tin lined with parchment. Cover and let rise another 45 minutes until puffy. Preheat oven to 180°C fan.
+8. Top with flaked almonds and bake 30-35 minutes until golden brown. Dust with icing sugar if you like.
+
+------------------------------------------------------------
+
+BLUEBERRY FRENCH TOAST BAKE
+Category: breakfast
+(Instagram screenshot; title not shown in the photo)
+
+Ingredients:
+- 7 eggs
+- 1 loaf brioche bread, cut into cubes
+- 1 1/2 c whole milk
+- 1/2 c heavy cream
+- 1/2 c white sugar
+- 1/4 c brown sugar
+- 1 1/2 tsp vanilla extract
+- 1 tsp cinnamon
+- 1/4 tsp nutmeg
+- 1 1/2 - 2 cups fresh blueberries
+- Powdered sugar and maple syrup for topping
+
+Directions:
+Grease a 9x13-inch baking dish or a large cast iron skillet with butter, then arrange the bread cubes and pour the blueberries over the top, mixing in slightly but not so much that they all sink to the bottom. Mix the eggs, cream, sugars, milk, cinnamon, nutmeg and vanilla, then pour over the bread cubes, pushing them down so they all get soaked; fill only to about an inch below the rim to allow room to expand while cooking. Cover and place in the fridge for 20 minutes to 2 hours, or even overnight, then bake at 350°F for about 40 minutes. Let cool 10 minutes, then dust with powdered sugar and drizzle with maple syrup.
+
+------------------------------------------------------------
+
+PUMPKIN ROLLS (Sister Amarie Taylor's — there's also a handwritten copy in the album)
+Category: dessert
+
+Cake:
+- 3/4 C flour
+- 1/2 tsp baking powder
+- 1/2 tsp baking soda
+- 1/2 tsp ground cloves
+- 1/2 tsp ground cinnamon
+- 1/4 tsp salt
+- 3 large eggs
+- 1 C sugar
+- 2/3 C blended or canned pumpkin
+
+Filling:
+- 1 (8 oz) pkg cream cheese, softened
+- 1 C powdered sugar
+- 6 Tbsp butter
+- 1 tsp vanilla
+
+Directions:
+Sprinkle powdered sugar (not from filling) onto a dish towel. Grease a 9x13-in pan then line with wax paper or parchment paper. Grease and flour the wax paper. Mix cake batter and pour onto pan thinly. Bake for 13-15 minutes. Place cake onto towel and roll it up. Let cool around 3 hours. While cooling, mix filling in a medium-sized bowl until smooth. Unroll the cake and add filling. Roll back up and sprinkle with powdered sugar. Refrigerate until served.
+(Oven temperature isn't listed — 375°F is typical for pumpkin rolls.)
+
+------------------------------------------------------------
+
+CINNAMON ROLLS
+Category: breakfast
+
+Dough:
+- 1/2 c milk
+- 1/2 c sugar
+- 1 tsp salt
+- 1/4 c butter, melted
+- 1/2 c warm water
+- 5 tsp yeast
+- 2 large eggs
+- 4 1/2 c flour
+
+Cinnamon filling:
+- 1/2 c butter, softened
+- 1 c sugar
+- 1 1/2 Tbsp cinnamon
+- 1/2 c chopped pecans or walnuts
+
+Icing:
+- 3 c powdered sugar
+- 6 Tbsp butter, softened
+- 1 tsp vanilla extract
+- 5-6 Tbsp milk
+
+Directions:
+1. Scald milk (bring just to a boil and remove from heat immediately). Stir in sugar, salt, and butter. Set aside and allow to cool to warm. In a large bowl mix warm water and yeast. Stir until dissolved. Stir in warm milk mixture, beaten eggs, and half the flour. Beat until smooth. Add remaining flour gradually, mixing as you go. You may need more or less than the total 4 1/2 cups, depending on the humidity and other factors. Your dough should be elastic and slightly stiff but not dry.
+2. Turn dough out onto a floured board and knead until smooth and very elastic. This usually takes 8-10 minutes. Butter the inside of a large mixing bowl. Put dough in bowl and turn dough over a couple of times to coat it all with the butter. Cover bowl and place in a warm place so it can rise. It will take about 1 hour to double in bulk. At that time punch dough down and turn out onto a lightly floured board to shape.
+3. Punch dough down. Divide in half. Roll one half of dough on a lightly floured surface to a 12x18-in rectangle. Spread with half the butter. Combine sugar and cinnamon. Sprinkle half of the mixture over surface. Sprinkle nuts over sugar mixture if you are using nuts. Roll up tightly lengthwise, sealing edges. Cut into 12 slices. Place in greased 13x9-inch pan. Repeat with remaining dough. Cover. Let rise 30 to 45 minutes until nearly doubled again.
+   Bake in preheated 350°F oven for 25 to 30 minutes. Cool for 15 minutes.
+4. Combine icing ingredients and drizzle over warm rolls.
+
+------------------------------------------------------------
+
+MOM'S BREAD (for 1 loaf & 12 dinner rolls OR 24 dinner rolls)
+Category: bread
+
+Ingredients:
+- 1 1/2 cup water
+- 1/2 cup butter
+- 1/2 cup honey
+- 1/3 cup powdered milk
+- 2 eggs
+- 1 cup whole wheat flour
+- 4 to 5 cups white flour ("Add all flour!!")
+- 3/4 teaspoon salt
+- 2 tablespoons yeast
+- 1 tablespoon sugar
+
+Directions:
+In a small bowl, melt butter in the 1 1/2 cups of water. Add honey and stir till dissolved. Set aside. In large mixing bowl add yeast, sugar, and 1/2 cup WARM water. Mix that a little and let it rest for 5 minutes (to proof). After the 5 minutes, add the melted butter/water/honey mixture from the small bowl. Also add the powdered milk, eggs and salt. Mix in 1 cup whole wheat flour. MIX WELL. Add remaining flour till dough follows spoon around the bowl. Pour dough on floured board and knead dough, adding a LITTLE flour if needed to keep it from sticking to your hands or board. Knead dough for 10 minutes (set timer). After 10 minutes of kneading, form into a ball and put into a greased bowl and cover with plastic wrap. Let it rest for 1 hour (set timer) to rise.
+
+After 1 hour, dough should be doubled in size. Punch it down (don't knead) and let rest for 5 more minutes. Divide dough in half. With one half, pinch dough into 12 rolls and place in greased rectangular pan. Remaining dough, form into a smooth loaf by rolling the edges under and putting in a bread loaf pan. Cover both pans with plastic wrap. Let rise 1 hour (till double in size).
+
+Heat oven to 350°F. Carefully take off plastic wrap after the hour and place in oven for 30 minutes.
+
+------------------------------------------------------------
+
+BEEF STROGANOFF (Joyce Hanlon)
+Category: entree
+Recipe by Joyce Hanlon
+
+Ingredients:
+- 1 lb. beef sirloin, cut into 1/4-in strips
+- 1 tablespoon flour
+- 1/2 teaspoon salt
+- 2 tablespoons butter
+- 8 oz fresh mushrooms, sliced (optional)
+- 1/2 cup chopped onions
+- 1 clove garlic, minced
+- 2 tablespoons butter
+- 3 tablespoons flour
+- 1 tablespoon tomato paste
+- 1 1/2 cups cold beef stock or 10.5 oz can beef broth
+- 1 cup sour cream
+- 2 tablespoons dry white wine (sub. grape juice)
+- Egg noodles
+
+Directions:
+Combine 1 tablespoon flour with salt; coat beef strips with flour mixture. Brown meat strips quickly in 2 tablespoons of heated butter. Add onions, garlic and mushrooms. Cook 3 to 4 minutes or until onions are crisp-tender. Remove meat, onions and mushrooms and set aside. To pan drippings, add 2 tablespoons of butter and 3 tablespoons flour. Cook till flour is well blended with the butter. Add beef broth and cook over medium heat till thick and bubbly. Return meat and mushroom mixture to skillet; add sour cream and white wine. Cook on low heat till thoroughly heated. Serve over broad/egg noodles.
+(Tomato paste is listed but not mentioned in the directions — add it with the broth.)
+
+------------------------------------------------------------
+
+CINNAMON ROLL SHORTBREAD BARS
+Category: dessert
+Prep 25 min | Cook 45 min | Chill 15 min | Total 1 hr 25 min | Serves 9 bars
+Equipment: 9x9 baking pan; electric mixer (optional)
+
+Shortbread crust:
+- 1 cup butter, softened
+- 3/4 cup superfine white sugar (caster sugar)
+- 1 tablespoon pure vanilla extract
+- 2.5 cups all-purpose flour
+- 1/4 teaspoon salt
+- 1 tablespoon turbinado sugar
+
+Cinnamon roll filling:
+- 1/4 cup softened butter
+- 1/2 cup brown sugar
+- 1 teaspoon cinnamon
+- 1 teaspoon vanilla extract
+
+Cinnamon roll frosting:
+- 1/4 cup cream cheese
+- 1/2 cup butter
+- 1 cup powdered sugar
+- 2 teaspoons vanilla extract
+
+Directions (condensed):
+1. Preheat oven to 350°F (175°C). Grease a 9x9 pan and line with parchment.
+2. Cream the butter and caster sugar until light and fluffy; mix in the vanilla.
+3. Whisk flour and salt in a separate bowl, then gradually add to the butter mixture, mixing just until combined.
+4. Press about two-thirds of the dough into the pan, reserving the rest for the top. Chill the crust 15-30 minutes.
+5. Bake the crust about 15 minutes, until very lightly golden. Cool slightly while making the filling.
+6. Cream together the filling ingredients. Dollop over the partly baked crust and spread evenly.
+7. Roll the reserved dough to about 1/8 inch, place pieces over the filling to loosely form a lid, and sprinkle with the turbinado sugar.
+8. Bake at 350°F about 30-35 minutes, until golden and the filling is bubbling. Cool slightly.
+9. Beat frosting ingredients until smooth; spread over the bars once slightly cooled. Slice into squares.
+
+------------------------------------------------------------
+
+WHITE SAUCE (and variations) — cookbook p. 326
+Category: sauce
+Makes 1 cup sauce; 25 calories per tablespoon
+
+Ingredients:
+- 2 tablespoons margarine or butter
+- 2 tablespoons all-purpose flour
+- 1/4 teaspoon salt
+- 1/8 teaspoon pepper
+- 1 cup milk
+
+Directions:
+Heat margarine in 1 1/2-quart saucepan over low heat until melted. Stir in flour, salt and pepper. Cook over low heat, stirring constantly, until mixture is smooth and bubbly; remove from heat. Stir in milk. Heat to boiling, stirring constantly. Boil and stir 1 minute.
+
+Variations:
+- Thin White Sauce: Decrease margarine to 1 tablespoon and flour to 1 tablespoon.
+- Thick White Sauce: Increase margarine to 1/4 cup and flour to 1/4 cup.
+- Cheese Sauce: Stir in 1/4 teaspoon dry mustard with the flour. After boiling and stirring 1 minute, stir in 1/2 cup shredded Cheddar cheese (2 oz) until melted.
+- Curry Sauce: Stir in 1/2 teaspoon curry powder with the flour. Serve with chicken, lamb or shrimp.
+- Dill Sauce: Stir in 1 teaspoon snipped dill weed or 1/2 teaspoon dried dill weed and a dash of ground nutmeg with the flour. Nice served with fish.
+- Mustard Sauce: Decrease margarine to 1 tablespoon and flour to 1 tablespoon. After boiling and stirring 1 minute, stir in 3 tablespoons prepared mustard and 1 tablespoon prepared horseradish. Serve with beef, veal, ham or vegetables.
+
+------------------------------------------------------------
+
+BLUEBERRY ALMOND PRALINE CAKE
+Category: dessert
+Makes 16 squares (8x8 pan)
+
+Blueberry cake:
+- 2 cups all-purpose flour
+- 2 1/2 tsp baking powder
+- 1/2 tsp salt
+- 1/4 cup unsalted butter, at room temp
+- 3/4 cup granulated sugar
+- 1/4 cup + 2 tbsp Greek yogurt (can sub sour cream)
+- 1 egg
+- 1/2 cup milk of choice
+- 2 cups blueberries, fresh or frozen, + 1 tbsp flour (for tossing)
+
+Almond praline topping:
+- 1/2 cup salted butter
+- 1/2 cup granulated sugar
+- 2 tbsp maple syrup
+- 1 tsp almond extract
+- 1 tbsp flour
+- 1 tbsp heavy cream (can sub milk)
+- 1 cup sliced almonds
+
+Directions (condensed):
+1. Preheat oven to 375°F. Grease and line an 8x8" pan with parchment.
+2. Whisk together flour, baking powder and salt.
+3. In a large bowl, beat butter and sugar until smooth (2-3 min). Mix in yogurt and egg, then the milk.
+4. Add the flour mixture and mix just until combined — don't over-mix.
+5. Toss blueberries with 1 tbsp flour and gently fold into the (thick) batter. Spread in the pan.
+6. Topping: combine all topping ingredients in a small saucepan over medium heat; bring to a simmer, stirring constantly, until bubbling and the sugar dissolves. Cook 3-5 more minutes until it looks like light, gooey caramel. Pour over the batter.
+7. Bake at 375°F for 32-38 minutes, until a toothpick comes out clean or with moist crumbs and the topping is golden.
+8. Cool in pan 10 minutes, then move to a rack. Cut into 16 squares.
+
+------------------------------------------------------------
+
+CHAPATI
+Category: bread
+Prep 1 hr | Cook 20 min | Total 1 hr 20 min | Serves 6 | Author: Imma
+
+Ingredients:
+- 3 cups all-purpose flour
+- 1 teaspoon sugar
+- 1 1/2 teaspoons salt
+- 3 tablespoons ghee (clarified butter or oil)
+- 1 1/4 cups warm water
+
+Directions (condensed):
+1. Mix flour, sugar and salt in a large bowl, then add the water and ghee/oil.
+2. Knead into a soft, sticky dough, then knead on a well-floured board 8-14 minutes, adding flour as needed, until soft, elastic and smooth. Don't overdo it.
+3. Divide into 6-8 pieces and let rest (relaxes the gluten so they're tender and easier to roll).
+4. Roll each ball into a circle. (You can cook them now, but for layers keep going.)
+5. Lightly oil the circle with ghee, lay it on a floured plate and press down, flip and press again, then shake off extra flour.
+6. Fold it like a paper fan from one end to the other, then coil it up.
+7. Cover the coils with a damp cloth and rest 20 minutes.
+8. Gently flatten each coil and roll out from the center, rotating as you go, to about 1/4 inch thick (chapatis aren't meant to be thin).
+9. Oil a crepe pan or skillet, cook the chapati, oiling the other side and the edges well. Cook 2-3 minutes, turning as needed, until golden brown. Serve warm.
+
+Notes: Kneading is crucial for texture; oil keeps it soft. Lukewarm water gives a smoother dough. Don't overcook — a non-stick pan helps.
+
+------------------------------------------------------------
+
+COCONUT LEMON RASPBERRY CAKE
+Category: dessert
+Coconut cake layers with lemon curd, raspberry cream filling and coconut buttercream. Serves 20.
+
+Coconut cake:
+- 1 1/2 cups (300 g) granulated sugar
+- 1 cup (226 g) unsalted butter, room temperature
+- 6 egg whites, room temperature
+- 2 whole eggs, room temperature
+- 1 tbsp (16 g) coconut emulsion
+- 1 tsp (4.2 g) vanilla extract
+- 3 cups (345 g) cake flour
+- 1 tbsp (10 g) baking powder
+- 1 tsp (6 g) salt
+- 1 cup (231 g) canned coconut milk (mix the cream and liquid well before measuring)
+
+Lemon curd:
+- 1 cup (230 g) lemon juice (fresh)
+- Zest of one lemon
+- 1/2 cup (100 g) granulated sugar
+- 3 eggs
+- 3 egg yolks
+- 4 tbsp (56.5 g) unsalted butter
+
+Coconut buttercream:
+- 2 cups (452 g) unsalted butter, slightly cold
+- 1/4 cup (57.7 g) cream of coconut (from the bottle, not the can)
+- 6 cups (750 g) powdered sugar, measured then sifted
+- 1 tbsp (16 g) coconut emulsion
+- Pinch of salt
+(Makes enough to fill and cover; make an extra 1/4-1/2 batch for extra piping.)
+
+Whipped raspberry filling:
+- 1/2 cup (15 g) freeze-dried raspberries
+- 1/2 cup (100 g) granulated sugar
+- 2 cups (455 g) heavy whipping cream
+
+Directions (condensed):
+CAKE: Preheat oven to 325°F. Spray three 8-inch pans, line with parchment, spray again. Whisk cake flour, baking powder and salt. In a stand mixer with paddle, cream butter and sugar on medium-high 3 minutes until light and fluffy. Gradually add egg whites and whole eggs, scraping the bowl; beat 2-3 more minutes. Add coconut emulsion and vanilla. On low, alternately add flour mixture and coconut milk, starting and ending with flour; mix until combined. Divide among pans. Bake about 23-25 minutes, until a toothpick has a few moist crumbs. Cool in pans 15 minutes, then invert onto racks. (Layers are 1-1.25 in tall; make 1.5x for thicker layers.)
+LEMON CURD (best made a day ahead): Whisk sugar, lemon juice and zest in a saucepan over medium-low heat. Whisk eggs and yolks in a small bowl, then whisk into the lemon mixture. Cook, whisking constantly, until thick like pudding, 6-8 minutes. Off heat, whisk in butter a few pieces at a time. Strain through a fine sieve, press plastic wrap on the surface, and chill until set, at least 4 hours (up to 5 days).
+BUTTERCREAM: Beat butter and cream of coconut on medium-high 1-2 minutes. On low, gradually add sifted powdered sugar, then coconut emulsion and salt. Beat on medium-high 3-5 minutes until light and fluffy. Stir with a wooden spoon to remove air bubbles.
+RASPBERRY FILLING: Pulse freeze-dried raspberries to a powder in a food processor. Add sugar and cream, scrape down, and pulse 1-2 minutes until thick like Greek yogurt. Keep chilled.
+ASSEMBLY: Place first layer top-side up; spread with about 1/2 cup buttercream and pipe a rim of buttercream around the edge. Spread about 1/2 cup raspberry filling, then about 1/4 cup lemon curd. Repeat for the second layer; top with the final layer bottom-side up. Crumb coat and freeze 10-15 minutes, then finish frosting and decorating.
+
+------------------------------------------------------------
+
+ALOHA CHICKEN & RICE BAKE
+Category: entree
+(Instagram reel by hopefulfoodfinds — last ingredient line is cut off in the screenshot)
+
+Ingredients:
+- 1/4 cup honey, maple syrup, or brown sugar
+- 1/2 cup low-sodium soy sauce or coconut aminos
+- 2 garlic cloves, minced
+- 1 cup chicken broth or bone broth
+- 1 cup uncooked white rice
+- 1/2 cup red onion, diced
+- 1 red bell pepper, chopped
+- 1 cup pineapple, chopped
+- 1 lb chicken breast or tenderloins, diced into [bite-size pieces]
+- Cilantro, to top (optional)
+
+Directions:
+In a bowl, whisk together honey, soy sauce, garlic, and chicken broth. To a baking dish, add the uncooked rice, onion, bell pepper, pineapple and chicken. Top with the soy sauce mixture and mix to combine. Cover the baking dish with foil and bake at 425°F for 50 minutes. Then uncover, stir ingredients, and return to the oven uncovered for an additional 10 minutes, until chicken is cooked through and rice is tender. Let stand 5 minutes before serving, and top with cilantro (optional).
+
+------------------------------------------------------------
+
+GRASSHOPPER CAKE
+Category: dessert
+Yield 20 servings | Prep 20 min | Cook 27 min | Total 47 min
+
+Cake:
+- 1 box Betty Crocker Super Moist White Cake Mix (with pudding in the mix)
+- 1 1/4 c. water
+- 1/3 c. vegetable oil
+- 3 egg whites (from three large eggs)
+- 4 oz. creme de menthe liqueur or syrup (liqueur preferred)
+
+Topping:
+- 1 (16 oz) jar hot fudge topping
+- 1 (8 oz) container Cool Whip
+- 2 oz. creme de menthe
+- Chopped Andes Mints for garnish, optional
+
+Directions:
+1. Preheat oven to 350°F for shiny metal or glass pan, or to 325°F for dark or nonstick pan. Lightly spray the bottom only of a 9x13" pan with non-stick spray.
+2. In a large bowl, with an electric mixer, beat the cake mix, water, oil, and egg whites on low speed for 30 seconds. Turn mixer up to medium and beat 2 minutes more, scraping the bowl occasionally. Batter will be a bit lumpy. Stir in the creme de menthe. Pour batter into prepared pan.
+3. Bake 27-32 minutes, or until a toothpick inserted in center comes out clean. Be careful not to over-bake, as it will end up dry. Cool completely.
+4. Gently spread fudge topping evenly over the cake. In a medium bowl, stir together Cool Whip and 2 oz creme de menthe. Spread over the fudge. If desired, garnish with chopped Andes Mints. Store covered in the refrigerator.
+Note: Only use two jars of fudge topping if you REALLY like fudge; otherwise use a single jar.
+
+------------------------------------------------------------
+
+STRAWBERRY BUTTERCREAM (macaron filling) — "French Macarons for Beginners," p. 132
+Category: dessert
+Prep 15 min | Yield: filling for 12 macarons
+
+Ingredients:
+- 113 g (1/2 cup; 1 stick) unsalted butter, softened (should be squishable)
+- 2 tablespoons milk (almond preferred)
+- 38 g (1/3 cup) powdered sugar, or to taste
+- 1 teaspoon vanilla extract
+- 6 g (1/4 cup) freeze-dried strawberries, powdered
+
+Directions:
+1. Whip the butter with an electric mixer (whisk attachment) on medium speed until pale, creamy and fluffy, about 3 minutes (it should not be yellow when you add the other ingredients). Add the milk, then the powdered sugar; slowly combine on low. It may look curdled at first — keep beating. Add vanilla and whip another 3 minutes until light and fluffy. Add the powdered freeze-dried strawberries and whip another 2 minutes.
+2. Put into a piping bag (no tip needed). Pipe a half-dollar-sized dollop in the middle of a macaron shell.
+3. Top with a matching shell and gently press and twist together. Repeat.
+Tip: Use a food processor to grind the freeze-dried strawberries into a fine powder.
+
+------------------------------------------------------------
+
+STRAWBERRY SHELLS (macaron shells) — "French Macarons for Beginners," p. 89
+Category: dessert
+Prep 15 min plus drying time | Bake 14 min | Yield 24 shells, or 12 macarons
+(The page says "continued" — the rest of the steps are on the next page, which isn't in the photo.)
+
+Ingredients:
+- 3 g (1 tablespoon) freeze-dried strawberries
+- 70 g (~3/4 cup) almond flour
+- 50 g (1/2 cup) powdered sugar
+- Pinch kosher salt
+- 53 g egg whites (1 1/2 egg whites from large eggs)
+- 50 g (1/4 cup) granulated sugar
+- 2 drops soft pink gel food coloring
+
+Directions (as far as shown):
+1. Grind the freeze-dried strawberries into a fine powder in a food processor, about 10 seconds. Sift together with the almond flour, powdered sugar and salt into a medium bowl.
+2. In a large bowl, using an electric mixer on medium speed, beat the egg whites until frothy. Slowly stream in the granulated sugar. Once incorporated, beat on medium-high until the meringue is thick, glossy and forms stiff peaks. Beat in the food coloring until evenly colored, about 1 minute.
+3. Add one-third of the almond-sugar mixture to the meringue and fold until just combined (turn the bowl with one hand while folding with a spatula in the other, pressing out some air, at least five rotations). Add the remainder in two batches the same way, folding until the mixture is thick but still flows slowly (like thick cake batter). Test: let some batter drop from the spatula back into the bowl — if it takes about 10 seconds to reincorporate, it's ready.
+4. Line a baking sheet with a silicone baking mat (or parchment paper, though it's not preferable).
+   ... continued on next page.
+
+------------------------------------------------------------
+
+CREPES ("Best Recipe for Crepes," Lauren Brennan)
+Category: breakfast
+Prep 2 hr (incl. chilling) | Cook 20 min | Makes ~16 crepes
+
+Ingredients:
+- 4 large eggs, room temperature
+- 2 1/4 cups milk
+- 2 cups all-purpose flour
+- 1 tablespoon granulated sugar
+- 1/4 cup melted butter or canola oil
+- Good pinch of salt
+
+Directions (condensed):
+1. Blend all ingredients until smooth, about 1 minute; scrape down and blend briefly again until lump-free. Refrigerate at least 1 hour (2 is ideal).
+2. Preheat a nonstick or cast iron skillet over medium to medium-high heat with a little butter or oil. Pour batter into the center while tilting the pan to spread it into a very thin layer (it takes a few tries to get even crepes).
+3. After 10-15 seconds, when the batter looks matte and the bottom is lightly browned, flip with an offset spatula and cook about 10 seconds more. Repeat with remaining batter.
+4. Keep finished crepes warm in a pie plate covered with foil or plastic wrap. Serve with any toppings.
+
+------------------------------------------------------------
+
+MARRY ME CHICKEN
+Category: entree
+Prep 10 min | Cook 15 min | Total 25 min | Serves 6 | Author: Diana
+
+Ingredients:
+- 3 large chicken breasts, boneless and skinless, sliced lengthwise into thin cutlets
+- 1/2 teaspoon salt
+- 1/4 teaspoon ground black pepper
+- 6 tablespoons (50 g) all-purpose flour
+- 2 tablespoons (30 ml) olive oil
+- 2 tablespoons (28 g) unsalted butter
+- 3 cloves garlic, minced
+- 1 cup (240 ml) chicken stock
+- 1 cup (240 ml) heavy cream
+- 1/2 cup (43 g) parmesan cheese, grated
+- 1 teaspoon chili flakes
+- 1/4 teaspoon oregano
+- 1/4 teaspoon thyme
+- 1/3 cup sundried tomatoes, chopped
+- 1 tablespoon fresh basil leaves
+
+Directions:
+1. Season chicken with salt and pepper, dredge in flour and shake off excess.
+2. In a large skillet, heat olive oil and melt the butter over medium heat, swirling to coat.
+3. Brown the chicken (in batches if needed) 4-5 minutes per side until golden and cooked through. Set aside, covered.
+4. Saute the garlic about a minute until fragrant. Add chicken stock and deglaze, scraping up the browned bits.
+5. Reduce heat to medium-low; add heavy cream and parmesan. Simmer a couple of minutes, then season with chili flakes, thyme and oregano.
+6. Season with salt and pepper, add the sundried tomatoes, return the chicken and simmer a few more minutes to thicken.
+7. Garnish with chopped basil; serve over pasta or rice.
+
+------------------------------------------------------------
+
+CHOCOLATE GANACHE (macaron filling) — "French Macarons for Beginners," p. 104
+Category: dessert
+Prep 15 min plus 30 min cooling | Yield: filling for 12 macarons
+
+Ingredients:
+- 113 g (1/2 cup) heavy cream
+- 113 g (1/2 cup) semisweet chocolate chips
+
+Directions:
+1. In a medium saucepan, heat cream on medium-high until very hot and bubbles start to form around the edge of the pan. Remove from heat and add chocolate chips. Let sit 1 minute to melt the chocolate. Stir until completely smooth. Transfer ganache to a heatproof bowl and let it cool to piping consistency, approximately 30 minutes in the refrigerator. Don't leave it in there too long, or it will solidify.
+2. Transfer cooled ganache into a piping bag (no tip needed). Squeeze a half-dollar-sized dollop in the middle of a macaron shell.
+3. Top with a matching shell; gently press and twist together. Repeat.
+
+------------------------------------------------------------
+
+MINT CHOCOLATE CHIP BUTTERCREAM (macaron filling) — "French Macarons for Beginners," p. 123
+Category: dessert
+Prep 15 min | Yield: filling for 12 macarons
+
+Ingredients:
+- 113 g (1/2 cup; 1 stick) unsalted butter, softened (should be squishable)
+- 2 tablespoons almond milk
+- 38 g (1/3 cup) powdered sugar, or to taste
+- 1 teaspoon peppermint extract
+- 25 g (2 1/2 tablespoons) mini semisweet chocolate chips
+- 1 drop green gel food coloring
+
+Directions:
+1. With an electric mixer (whisk attachment) on medium speed, whip the butter until pale, creamy and fluffy, about 3 minutes. Add the milk, then the powdered sugar on top; slowly combine on low (it may look curdled at first — keep beating). Add the peppermint extract and whip another 3 minutes until light and fluffy. Add the chocolate chips and food coloring and whip to incorporate, another 2 minutes.
+2. Transfer to a pastry bag (no tip needed). Squeeze a half-dollar-sized dollop onto the middle of a macaron shell.
+3. Top with a matching shell; gently press and twist together. Repeat.
+
+------------------------------------------------------------
+
+SALTED CARAMEL (macaron filling) — "French Macarons for Beginners," p. 130
+Category: dessert
+Prep 45 min plus 1-2 hours setting time | Yield: filling for 12 macarons
+
+Ingredients:
+- 125 g (1/2 cup) heavy cream
+- 100 g (1/2 cup) granulated sugar
+- 30 g (2 tablespoons) water
+- 113 g (1/2 cup; 1 stick) unsalted butter, cubed and softened
+- 1.5 g (1/4 teaspoon) sea salt
+
+Directions:
+1. Warm the cream in the microwave about 20 seconds (makes it easier to incorporate into the hot sugar).
+2. Pour the sugar into the center of a medium saucepan, then add the water, swishing it around to dampen the sides and toward the center to liquify the sugar. Gently swirl to add water evenly, but don't stir. Heat on medium-high; bring to a boil without stirring (stirring can make crystals form). When the syrup turns light golden amber, remove from the heat.
+3. Gradually pour the cream into the syrup while stirring (it may bubble up). Return to medium heat, stirring continuously with a wooden spoon (ideally one with a straight edge) to blend and prevent scorching. It's normal for the sugar to seize after adding the cream — keep stirring over the heat and it will dissolve into a smooth sauce.
+4. While cooking over medium heat, add the butter and swirl it in. Reduce heat to low and keep cooking, stirring, until thickened and golden, about 30 minutes — you want a filling that somewhat holds its shape.
+5. Remove from heat and stir in the salt. Keep stirring to help it cool down.
+6. Once cool enough to work with, transfer to a pastry bag (no tip needed). Squeeze a half-dollar-sized dollop onto the middle of a macaron shell.
+7. Top with a matching shell, gently press and twist. Repeat.
+
+------------------------------------------------------------
+
+MINT CHOCOLATE CHIP SHELLS (macaron shells) — "French Macarons for Beginners," p. 69
+Category: dessert
+Prep 15 min plus drying time | Bake 14 min | Yield 24 shells, or 12 macarons
+
+Ingredients:
+- 70 g (~3/4 cup) almond flour
+- 50 g (1/2 cup) powdered sugar
+- Pinch kosher salt
+- 53 g egg whites (1 1/2 egg whites from large eggs)
+- 50 g (1/4 cup) granulated sugar
+- 1 drop blue gel food coloring
+- 1 drop green gel food coloring
+- 2 drops mint extract
+- 10 g Oreo cookies, powdered (2 tablespoons) — see Tip
+
+Directions:
+1. Sift the almond flour, powdered sugar and salt together into a medium bowl.
+2. In a large bowl, using an electric mixer on medium speed, beat the egg whites until frothy. Slowly stream in the granulated sugar. Once incorporated, beat on medium-high until the meringue is thick, glossy and forms stiff peaks. Beat in the food coloring and mint extract until evenly colored, about 1 minute.
+3. Add one-third of the almond-sugar mixture to the meringue and fold until just combined (turn the bowl with one hand while folding with the spatula, pressing out some air; at least five rotations). Add the rest in two batches the same way, folding until the batter is thick but still flows slowly (like thick cake batter). Test: batter dropped back into the bowl should reincorporate in about 10 seconds.
+4. Line a baking sheet with a silicone baking mat (or parchment, though not preferable).
+5. Transfer batter to a pastry bag fitted with a #12 round tip. Pipe 24 circles 1 to 1 3/4 inches in diameter, spaced 1 1/2 inches apart. Lift the pan and lightly drop it on the counter to remove air bubbles (repeat if needed). Sprinkle the tops evenly with the ground Oreos.
+6. Let the shells dry, uncovered, at room temperature until the tops are dull and no longer sticky — 30 to 60 minutes with a fan; without one, 30 minutes to 2 hours depending on the weather.
+7. Preheat oven to 300°F, then bake on the center rack for 14 minutes. Touch the top of a shell: if it jiggles a little but not much, it's done.
+8. Cool on the baking sheet 10 minutes, then move to a clean plate or counter, pair up similar-size shells and fill.
+Tip: Use a food processor to grind the Oreos into a fine powder.
+Pairs well with: Chocolate Ganache (p. 104), Mint Chocolate Chip Buttercream (p. 123), Mocha Buttercream (p. 124).
+
+------------------------------------------------------------
+
+BUTTER CHICKEN
+Category: entree
+
+Marinade:
+- 1 cup plain yogurt
+- 1 Tbsp lemon juice
+- 2 tsp ground cumin
+- 1 tsp ground cinnamon
+- 1 tsp cayenne pepper
+- 1 tsp ground ginger
+- 1 1/2 tsp garam masala
+- 1 tsp black pepper
+- 1 tsp salt
+- 3 boneless skinless chicken breasts
+
+Sauce:
+- 2-3 Tbsp butter
+- 1 clove garlic, minced
+- 1 jalapeno, finely chopped
+- 2 tsp ground cumin
+- 2 tsp paprika
+- 2 tsp garam masala
+- 2 tsp salt, or to taste
+- 1 (8 oz) can plain tomato sauce
+- 1 cup heavy cream
+- 2 Tbsp cornstarch (or more if you like a thicker sauce)
+- 3 Tbsp water
+- Cilantro (optional)
+
+Directions:
+1. The night before cooking, add the yogurt, lemon juice, cumin, cinnamon, cayenne, black pepper, ginger, salt, and chicken (leave the breasts whole here) to a large Ziploc bag.
+2. Zip the bag closed and work the mixture into the chicken until all is incorporated. Refrigerate overnight. (If you haven't done it the night before, let the chicken marinate at least 2-3 hours.)
+3. Scrape off a majority of the marinade that is on the chicken and discard it. You'll have plenty of the second sauce to keep the food moist and provide enough sauce.
+4. Cut the chicken into two-inch chunks.
+5. Lightly saute the garlic and jalapeno in the butter.
+6. Add the spices, tomato sauce, and heavy cream and mix well, until all is mixed together.
+7. Add the chicken and cover your pan with a lid. Allow the chicken to cook until done (5-8 minutes), mixing occasionally so the heavy cream in the sauce doesn't burn.
+8. Once the chicken has cooked, whisk together the cornstarch and water in a small bowl and pour into the chicken and sauce while mixing (to make sure the cornstarch doesn't create little cornstarch dumplings). Allow the sauce to thicken up.
+
+------------------------------------------------------------
+
+FRESH STRAWBERRY SAUCE (SYRUP)
+Category: sauce
+Makes 1 cup / 12 servings. Great on ice cream, pancakes, waffles, crepes, cheesecake.
+
+Ingredients:
+- 3 cups strawberries, diced
+- 1 cup granulated sugar
+- 2 tablespoons lemon juice
+- 1/4 teaspoon vanilla extract
+
+Directions:
+1. Combine strawberries, sugar, lemon juice and vanilla in a medium saucepan and bring to a boil. Lower heat to a gentle simmer until the strawberries are soft and the syrup is thickened and reduced by 1/3 to 1/2 in volume, about 15 minutes, stirring occasionally.
+2. Syrup will thicken on standing, so simply whisk in more water to reach desired consistency if needed.
+
+------------------------------------------------------------
+
+PASTEL DE TRES LECHES (Tres Leches Cake)
+Category: dessert
+Serves 10 generous portions
+
+Cake:
+- 1 cup sugar (divided: 3/4 cup + 1/4 cup)
+- 5 large eggs, separated
+- 1/3 cup milk
+- 1/2 tsp vanilla extract
+- 1 cup all-purpose flour
+- 1 1/2 tsp baking powder
+- 1/2 tsp cream of tartar
+
+Milk syrup:
+- 1 can (12 oz) evaporated milk
+- 1 cup sweetened condensed milk
+- 1 cup heavy (whipping) cream
+- 1 tsp vanilla extract
+- 1 Tbsp dark Cuban rum
+
+Garnishes:
+- Fresh whipped cream or good-quality vanilla ice cream
+- Cocoa powder
+- Sliced fresh mango (or fruit of your choice — tropical fruits pair nicely)
+
+Directions:
+Cake: Preheat oven to 350°F. Generously butter a 13x9-inch baking dish. Beat 3/4 cup sugar and the egg yolks until light and fluffy, about 5 minutes. Fold in the milk, vanilla, flour and baking powder. Beat the egg whites to soft peaks, adding the cream of tartar after 20 seconds. Gradually add the remaining 1/4 cup sugar and continue beating until the whites are glossy and firm, but not dry. Gently fold the whites into the yolk mixture. Pour into the buttered dish. Bake until the cake feels firm and a toothpick comes out clean, about 30-45 minutes. Let the cake cool completely in the dish. Pierce the cake all over with a fork, taking care not to tear it up.
+Milk syrup: Combine the evaporated milk, sweetened condensed milk, cream, vanilla and rum in a mixing bowl. Whisk until well blended. Pour the syrup over the cake, spooning the overflow back on top, until it is all absorbed.
+To serve: Cut a slice and plate it. Top with a dollop of freshly whipped cream or a side of ice cream, dust with some cocoa powder and place a slice or two of fresh mango on the side. This cake is addictive — you've been warned!
+
+------------------------------------------------------------
+
+COPYCAT VAN STAPELE COOKIES (Amsterdam Cookies / Triple Chocolate Cookies)
+Category: dessert
+Rich dark chocolate cookies with milk chocolate chips and a white chocolate center. Makes ~26 (recipe card says 52 servings).
+(Quantities copied exactly as shown in the screenshot — note the cup/gram amounts don't all match each other.)
+
+Ingredients:
+- 3 cups (180 g) all-purpose flour
+- 2 teaspoon (4 g) baking soda
+- 2 teaspoon (4 g) cornstarch
+- 2 teaspoon (6 g) salt
+- 2 cup (226 g) unsalted butter
+- 1.5 cup (88.5 g) good-quality dark cocoa powder
+- 1.5 cup (160 g) packed brown sugar
+- 1 cup (100 g) granulated sugar
+- 2 teaspoon (4.2 g) vanilla extract
+- 4 eggs
+- 2 cup (180 g) milk chocolate chips
+- 5.2 oz white chocolate (Lindt white chocolate bars broken into ~0.1 oz rectangular pieces, one per cookie)
+
+Directions (condensed):
+1. Preheat oven to 350°F. Line baking sheet with parchment.
+2. Whisk together flour, baking soda, cornstarch and salt.
+3. Melt butter with the cocoa powder in a saucepan over medium heat, stirring until smooth and shiny. Cool to room temperature.
+4. In a mixer with paddle, beat the cocoa-butter mixture with brown and granulated sugar on medium until smooth, about 2 minutes.
+5. Mix in the eggs and vanilla.
+6. On low, stir in the flour mixture until no streaks remain; stir in the milk chocolate chips.
+7. Refrigerate the dough about an hour to firm up.
+8. Scoop 1-inch balls (about 52) onto parchment; two balls make one cookie.
+9. Slightly flatten one ball, place a white chocolate piece in the center, top with another ball and seal the sides (about 26 cookies).
+10. Space well apart — they spread (about 8 per sheet).
+11. Bake about 10 minutes.
+12. Cool about 5 minutes and enjoy warm.
+
+------------------------------------------------------------
+
+OATMEAL RAISIN COOKIES (adapted from Epicurious)
+Category: dessert
+
+Ingredients:
+- 2 cups all-purpose flour
+- 1 teaspoon baking powder
+- 1 teaspoon ground cinnamon
+- 1/2 teaspoon baking soda
+- 1/2 teaspoon salt
+- 3/4 cup (1 1/2 sticks) unsalted butter, room temperature
+- 1/4 cup Crisco, room temperature
+- 1 cup sugar
+- 1 cup (packed) dark brown sugar
+- 1/4 cup honey
+- 2 large eggs
+- 1 tablespoon vanilla extract
+- 3 cups old-fashioned oats
+- 2 cups raisins
+
+Directions:
+Preheat the oven to 350°F. Line baking sheets with parchment paper.
+In a medium bowl, whisk together the flour, baking powder, cinnamon, baking soda and salt. Set aside.
+In your mixer, beat together the butter and Crisco. Add the sugars and beat until fluffy. Add the eggs, honey and vanilla and beat until well combined. Add the flour mixture and mix until incorporated. Stir in the oatmeal and raisins; mix until well combined.
+Drop by tablespoonfuls onto baking sheets. Bake for 10 minutes, then let the cookies cool on the sheet for 10 minutes before removing them to a wire rack.
+
+------------------------------------------------------------
+
+PESTO CHICKEN STUFFED YOGURT-DOUGH BUNS
+Category: entree
+(Instagram reel comment by fitfoodiestasia; no title shown — makes 8)
+
+Dough:
+- 2 cups (~285 g) AP flour
+- 1 1/2 cups (~320 g) nonfat Greek yogurt
+- 1 1/2 tbsp baking powder
+- Salt, garlic powder, Italian seasoning (to taste)
+
+Filling (divided among 8):
+- 2 tbsp (40 ml) pesto verde
+- 3/4 cup (~100 g) shredded mozzarella
+- 180 g grilled chicken breast, cubed
+
+Directions:
+Mix flour, yogurt, and seasonings until a crumbly consistency, then knead with your hands until a dough ball forms. Cut the dough into 8 small portions/balls. Flatten them as much as possible, then add the fillings, folding up the edges to seal the ball. Grease a pan and cook over medium heat for ~4 mins on each side until golden brown.
+
+------------------------------------------------------------
+
+HOT COCOA COOKIES
+Category: dessert
+
+Ingredients:
+- 1 cup soft butter
+- 1 1/2 cups granulated sugar
+- 2 eggs
+- 1 teaspoon vanilla
+- 2 cups flour
+- 2/3 cup cocoa powder
+- 3/4 teaspoon baking soda
+- 1/3 teaspoon salt
+- Mini marshmallow bits
+- Mini chocolate chips
+
+Directions:
+- Preheat oven to 350°F.
+- Combine butter and sugar until fluffy.
+- Add in eggs and vanilla.
+- Mix flour, cocoa powder, baking soda, and salt.
+- Beat dry mixture into wet mixture.
+- Fold in mini marshmallows and mini chocolate chips.
+- Bake for about 7 minutes.
+
+------------------------------------------------------------
+
+HOLIDAY (TURKEY) GRAVY
+Category: sauce
+
+Ingredients:
+- 1/4 cup turkey drippings (fat and juices from roasted turkey)
+- 1/4 cup Gold Medal all-purpose flour
+- 2 cups liquid (juices from roasted turkey, broth, water)
+- Browning sauce, if desired
+- 1/2 teaspoon salt
+- 1/2 teaspoon pepper
+
+Directions:
+1. Pour drippings from roasting pan into bowl, leaving brown particles in pan. Return 1/4 cup drippings to roasting pan. (Measure accurately because too little fat makes gravy lumpy.) Stir in flour. (Measure accurately so gravy is not greasy.)
+2. Cook over medium heat, stirring constantly, until mixture is smooth and bubbly. Stir in liquid. Heat to boiling, stirring constantly. Boil and stir 1 minute. Stir in a few drops of browning sauce. Stir in salt and pepper.
+
+------------------------------------------------------------
+
+HOLIDAY HERB STUFFING (for a 12-18 lb turkey)
+Category: side
+
+Ingredients:
+- 1 large loaf sliced sandwich bread
+- 1 cup butter (or 1/2 C. olive oil + 1/2 C. butter)
+- 1 extra-large onion
+- 4 Tbsp dry sage or Herbes de Provence (mixed herbs)
+- 2 full celery sticks, thinly sliced (1/2 cup)
+- 1 cup broth or water
+- 1 tsp salt
+- 1/4 tsp black pepper
+
+Directions:
+Preheat oven to 325°F if you are not stuffing a bird and just baking this in an oven alone.
+Cut bread into cubes with a knife & set aside.
+Melt butter in a skillet over medium heat. Add chopped onion, sage & celery; cook until onions are transparent. Add to the skillet the water, salt, and pepper. Stir a little.
+Drizzle a little of this over the bread cubes. Stir the bread cubes with your hands, then drizzle more. Keep doing this, mixing with hands, slowly adding the onion mixture till all is well moistened (stuffing should hold together in a loose ball).
+Stuff cavity of bird, or bake stuffing in a covered dish — uncover for the last 10 minutes or when slightly crisp on top.
+*You can prepare this the night before stuffing & roasting a turkey. Just place the stuffing mixture in a bag and store in the refrigerator overnight.
+
+------------------------------------------------------------
+
+JOYCE HANLON'S DINNER ROLLS (Holiday Bread Rolls)
+Category: bread
+Makes 24 rolls
+
+1st small bowl:
+- 1 cup water
+- 1/2 cup butter (1 stick)
+- 1/2 cup honey
+Melt butter and water together, then stir in the honey... set to the side.
+
+2nd small bowl:
+- 2 1/2 Tbsp. yeast
+- 1 Tbsp. sugar
+- 1/2 cup warm water
+Mix this for 5 seconds only and set aside to proof (bubble up).
+
+Mixing bowl:
+- 1 cup whole wheat flour
+- 1 cup white flour
+- 3/4 tsp. salt
+- 2 eggs
+- Mixtures from the two small bowls above
+Mix all this and above together till no flour clumps remain. Don't over mix though!
+
+Next:
+- 3 cups white flour
+Add these 3 more cups of white flour to the mixing bowl. Get your hands in there, kneading for about 2 minutes. Clean your fingers off and go wash your hands.
+
+Lastly:
+Dust your countertop with flour and dump the sticky dough out on it. Knead for 8 minutes! Dust your countertop again when your hands start sticking. Try not to add more than a cup of flour in dusting!
+Wash & dry your mixing bowl. Butter it really well and place the dough ball in there. Cover it with plastic wrap. Let rise 1 hour. Punch it down & let rest 5 minutes.
+
+Rolls:
+Pinch dough into 24 rolls and place 12 each in buttered 9x13-in. pans. Spray some plastic wrap with Pam and SEAL over rolls. Let rise for 1 hour. BAKE at 350°F for 25 minutes.
+
+------------------------------------------------------------
+
+CRANBERRY JELL-O (Holiday)
+Category: side
+
+Ingredients:
+- 2 (3 oz) pkgs raspberry Jell-O
+- 1 1/4 C. boiling water (dissolve the gelatin in this, stir well)
+- 1 small can crushed pineapple
+- 1 can WHOLE BERRY cranberry sauce
+- 1 C. chopped pecans
+- 3/4 C. port wine (I use berry juice or grape juice)
+
+Directions:
+MIX EVERYTHING TOGETHER AND REFRIGERATE OVERNIGHT.
+Optional topping: 8 oz. cream cheese mixed well with 1 C. sour cream.
+
+------------------------------------------------------------
+
+CORN CASSEROLE (Holiday)
+Category: side
+
+Ingredients:
+- 1/4 cup sugar
+- 3 Tbsp flour
+- 2 tsp baking powder
+- 1 1/2 tsp salt
+- 6 large eggs
+- 2 cups fresh cream
+- 1/2 cup butter
+- 6 cups frozen corn kernels
+
+Directions:
+Whisk all ingredients together. Store in a gallon-sized ziplock until ready to bake.
+Spray or lightly grease a 13x9-in baking dish. Pour the corn mixture into the dish and bake at 350°F for 45 minutes.
+
+------------------------------------------------------------
+
+GREEN BEAN CASSEROLE (Holiday)
+Category: side
+
+Ingredients:
+- 1 can condensed cream of mushroom soup
+- 1/2 cup milk
+- 1 teaspoon soy sauce
+- 1 dash black pepper
+- 4 cups cooked cut green beans
+- 1 1/3 cups French fried onions
+
+For the cooked green beans, use one of the following:
+- 1 bag (16 to 20 oz) frozen green beans, thawed, OR
+- 2 cans (14.5 oz each) green beans, drained (no need to cook), OR
+- 1 1/2 pounds fresh green beans
+
+Directions:
+1. Stir the soup, milk, soy sauce, black pepper, beans and 2/3 cup onions in a 1 1/2-quart casserole.
+2. Bake at 350°F for 25 minutes or until the bean mixture is hot and bubbling. Stir the bean mixture. Sprinkle with the remaining onions.
+3. Bake for 5 minutes or until the onions are golden brown.
+If you don't have the French fried onions, you can fry your own onions and sprinkle them over the casserole instead.
+
+------------------------------------------------------------
+
+JASMINE SYRIAN FOOD'S BAKLAVA (magazine clipping)
+Category: dessert
+Active 35 min | Total 2 hrs 10 min | Makes 72 pieces
+To make ahead: Refrigerate airtight up to 5 days or freeze up to 4 months.
+To make clarified butter: melt butter in a small saucepan over medium-low heat, skim the milk solids from the top, and slowly pour the butter out, leaving the remaining solids in the bottom.
+
+Ingredients:
+- 2 cups granulated sugar
+- 1 cup water
+- 1 teaspoon lemon juice
+- 3 teaspoons orange blossom water, divided
+- 3/4 cup superfine sugar
+- 6 cups chopped walnuts
+- 18 (13x18-inch) sheets or 36 (9x14-inch) sheets phyllo dough (1 pound), thawed according to package directions
+- 1 1/4 cups clarified butter or ghee, warmed
+- 3 tablespoons unsalted pistachios, lightly toasted and minced
+
+Directions:
+1. Combine granulated sugar and water in a medium saucepan; bring to a boil over medium heat, stirring occasionally. Stir in lemon juice. Reduce heat to maintain a simmer and cook, stirring occasionally, until reduced to a scant 1 3/4 cups, 15 to 18 minutes. Remove from heat and stir in 1 teaspoon orange blossom water. Let cool for 10 minutes.
+2. Meanwhile, preheat oven to 350°F. Coat a large rimmed baking sheet with cooking spray.
+3. Combine 1/3 cup of the syrup, superfine sugar and the remaining 2 teaspoons orange blossom water in a large bowl. Stir in walnuts.
+4. Unroll phyllo (keep the stack covered with a damp kitchen towel while you work). Lay 1 sheet in the prepared pan and brush generously with butter (or ghee), making sure to cover all the dough. Repeat until there are 14 layers. (If using 9x14-inch sheets, use 2 sheets, slightly overlapping, for each layer.)
+5. Spoon the walnut filling evenly over the phyllo. Press the mixture all over with the back of a spoon. Lay 1 sheet of phyllo on top and press it firmly with your palms. Brush generously with butter (or ghee). Repeat layering, pressing and buttering with the remaining 3 (or 6) phyllo sheets.
+6. Using a sharp knife, trim any shaggy edges so they are flush with the sides of the pan. Using the knife and a ruler, score the phyllo at opposite long ends, marking six 2-inch strips. Cut along score lines, using the ruler as a guide. Then score on a diagonal, marking twelve 1 1/2-inch-wide strips to create diamonds. Using the ruler as a guide, cut along the score lines.
+7. Bake the baklava, rotating the pan twice, until the phyllo is deep golden and crisp, including down into the cuts, 35 to 45 minutes. Immediately spoon the reserved syrup over the hot baklava. (If the baklava has cooled or the syrup is hot, it will be soggy.)
+8. Sprinkle the center of each diamond with pistachios. Let cool in the pan on a wire rack for at least 1 hour. Re-cut, if needed, before serving.
+
+------------------------------------------------------------
+
+PORK & GREEN BEAN STIR-FRY (magazine clipping, "Dinner Tonight: 20-Minute Mains")
+Category: entree
+Active 20 min | Total 20 min | Serves 4 (1 1/2 cups each). Serve with cooked rice.
+
+Ingredients:
+- 1/4 cup apricot jam
+- 2 tablespoons reduced-sodium tamari or soy sauce
+- 1 tablespoon toasted sesame oil
+- 2 teaspoons chile-garlic sauce
+- 1 pound pork tenderloin, trimmed and cut into thin strips
+- 1/4 cup cornstarch
+- 3 tablespoons grapeseed or avocado oil
+- 12 ounces green beans, trimmed
+- 1/4 cup thinly sliced scallions, plus more for garnish
+- 2 tablespoons toasted sesame seeds
+
+Directions:
+1. Whisk jam, tamari (or soy sauce), sesame oil and chile-garlic sauce in a small bowl. Set aside.
+2. Toss pork with cornstarch in a medium bowl until no cornstarch remains at the bottom of the bowl.
+3. Heat grapeseed (or avocado) oil in a large flat-bottom wok or cast-iron skillet over medium-high heat until it shimmers. Add the pork and cook, stirring occasionally, until browned and crisp, 6 to 8 minutes. Stir in green beans and continue to cook, stirring often, until the beans are tender-crisp, 3 to 6 minutes. Add the jam mixture and cook, stirring often, until well coated, 30 seconds to 1 minute. Remove from heat and add scallions and sesame seeds. Toss to combine. Sprinkle with more scallions, if desired.
+
+------------------------------------------------------------
+
+ODAA ETHIOPIAN'S LAMB TIBS (EatingWell, October 2021; recipe by Kamariya Jimjimo)
+Category: entree
+Active 20 min | Total 20 min | Serves 4 (2/3 cup each)
+Serve with injera (fermented Ethiopian flatbread) and a simple salad.
+
+Ingredients:
+- 1 1/4 pounds boneless lamb leg, trimmed and cut into 1-inch cubes
+- 1/2 teaspoon salt, divided
+- 1 tablespoon extra-virgin olive oil or canola oil
+- 2 teaspoons butter
+- 1/2 medium onion, diced
+- 1 jalapeno pepper, finely chopped
+- 3 tablespoons grated fresh ginger
+- 1 tablespoon minced garlic
+- 1 1/2 teaspoons finely chopped fresh rosemary
+- 1 1/2 teaspoons berbere seasoning
+- 1 medium tomato, diced
+- 1/4 cup water
+
+Directions:
+1. Season lamb with 1/4 teaspoon salt. Heat oil in a large cast-iron skillet over medium-high heat. Add the lamb and cook, turning occasionally, until browned on all sides but still pink in the center, about 8 minutes. Transfer to a plate.
+2. Add butter to the pan, then onion, jalapeno, ginger, garlic, rosemary and berbere; cook, stirring often, until softened and fragrant, about 3 minutes. Add tomato and the remaining 1/4 teaspoon salt. Reduce heat to medium and cook, stirring occasionally, until the tomato is tender, about 3 minutes.
+3. Stir in water. Add the lamb to the sauce and toss to coat. Serve immediately.
+
+------------------------------------------------------------
+
+LEMON-GARLIC STEAK & GREEN BEANS (magazine clipping)
+Category: entree
+Active 20 min | Total 20 min | Serves 4 (3 oz steak & 3/4 cup green beans each)
+Tip from the clipping: strip steak (New York strip) is tender and flavorful with less than half the saturated fat of rib-eye.
+
+Ingredients:
+- 1 tablespoon grapeseed or canola oil
+- 3 cloves garlic, grated, divided
+- 1 teaspoon paprika
+- 1/2 teaspoon chili powder
+- 1/2 teaspoon salt, divided
+- 1 pound boneless strip steak, trimmed
+- 2 tablespoons lemon juice
+- 2 tablespoons water
+- 1 pound green beans, trimmed
+
+Directions:
+1. Combine oil, half the garlic, paprika, chili powder and 1/4 teaspoon salt in a small bowl. Rub the mixture on steak. Heat a large skillet over medium heat. Add the steak and cook, flipping occasionally and adjusting the heat as necessary to prevent smoking, until an instant-read thermometer inserted in the thickest part registers 135°F for medium-rare, 10 to 12 minutes. Transfer to a clean cutting board and let rest.
+2. Add lemon juice and water to the pan and scrape up any browned bits. Stir in green beans, the remaining garlic and 1/4 teaspoon salt. Cover and cook until the beans are tender-crisp, about 5 minutes more.
+3. Slice the steak against the grain and serve with the green beans.
+
+------------------------------------------------------------
+
+CZECH POPPY SEED KOLACE (pronounced "ko-la-chay") (magazine clipping)
+Category: dessert
+Active 1 hr 5 min | Total 2 3/4 hrs | Makes 56 kolace
+To make ahead: Freeze cooled kolace airtight for up to 1 month.
+Equipment: Parchment paper
+Tip: For the signature even indentation, use a 100-gram weight about 1 1/4 inches in diameter — or anything round and a touch smaller than the dough balls, like the bottom of a glass spice jar. Dust it with flour first to prevent sticking.
+
+Dough:
+- 1 1/4 cups low-fat milk
+- 2 (1/4-ounce) packages active dry yeast (1 1/2 tablespoons)
+- 1 tablespoon granulated sugar
+- 3 large egg yolks, room temperature, plus 1 large egg mixed with 1 tablespoon water for egg wash, divided
+- 4 tablespoons (1/2 stick) unsalted butter, melted and cooled to room temperature
+- 1/4 cup canola oil
+- 2 cups white whole-wheat flour
+- 2 cups all-purpose flour
+- 1/3 cup confectioners' sugar
+- 2 teaspoons kosher salt
+- Zest of 1 lemon
+- 1/3 cup lard, melted and cooled to room temperature
+
+Filling:
+- 1 cup low-fat milk
+- 1 cup poppy seeds
+- 2 teaspoons all-purpose flour
+- 2 teaspoons honey
+- Zest of 1 lemon
+
+Directions:
+1. To prepare dough: Heat 1 1/4 cups milk in a small saucepan over medium-high heat until steaming. Let cool until about 110°F. Stir in yeast and granulated sugar. Set aside until frothy, about 10 minutes.
+2. Meanwhile, place egg yolks in a medium bowl. While whisking the yolks, gently stream in melted butter and oil.
+3. Combine whole-wheat flour, 2 cups all-purpose flour, confectioners' sugar, salt and lemon zest in the bowl of a stand mixer fitted with a dough hook or in a large bowl. Add the yeast and yolk mixtures, then beat until the dough pulls away from the sides of the bowl and forms a ball, 3 to 5 minutes with a stand mixer or 10 to 15 minutes by hand.
+4. Slowly add lard and mix until all the lard is incorporated and the dough no longer sticks to the bowl, 3 to 5 minutes. Cover the bowl with plastic wrap and let the dough rise in a warm place until doubled in size, about 1 hour.
+5. Meanwhile, prepare filling: Mix milk, poppy seeds, flour, honey and lemon zest in a small saucepan. Cook over medium heat, stirring occasionally, until bubbly and thickened, 8 to 10 minutes. Remove from heat and let cool completely, about 1 hour.
+6. Line 3 baking sheets with parchment paper. Turn the dough out onto a floured surface. Use a knife to slice off walnut-size chunks. Flatten each with your palm, then fold the edges under to create a tight ball. Arrange the balls, seam-side down, on the prepared baking sheets, about 2 inches apart. Cover with plastic wrap and let double in size, 30 to 40 minutes.
+7. Preheat oven to 375°F.
+8. Dust the bottom of a small spice jar (or other similar-size object) with flour and use it to press a large indentation into the middle of each kolace, leaving about a 1/4-inch lip. Brush with egg wash. Fill each indentation with the filling.
+9. Bake the kolace until puffy and lightly golden, 10 to 12 minutes. Transfer to a wire rack to cool, about 10 minutes.
+
+------------------------------------------------------------
+
+STRAWBERRIES & CREAM POPS (magazine clipping)
+Category: dessert
+Active 30 min | Total 6 3/4 hrs | Serves 6 (1 pop each)
+To make ahead: Freeze up to 1 week. Equipment: Six 3-oz freezer-pop molds.
+
+Ingredients:
+- 1 pound strawberries, hulled and quartered
+- 2 teaspoons lemon juice
+- 2 teaspoons granulated sugar
+- 1 1/4 cups vanilla frozen yogurt
+
+Directions:
+1. Combine strawberries, lemon juice and sugar in a medium saucepan. Cook over medium heat, stirring, until the sugar is dissolved and the fruit has broken down, 8 to 10 minutes. Transfer the mixture to a bowl and refrigerate, uncovered, until completely cooled, about 30 minutes.
+2. Let frozen yogurt soften for a few minutes at room temperature. Stir with a sturdy flexible spatula until pliable. (If it gets too soft, return to the freezer for a few minutes to firm up slightly.)
+3. Alternate layers of 1 tablespoon each of the frozen yogurt and compote into each of six 3-ounce freezer-pop molds until they're almost full. Using a skewer or chopstick, gently stir to create a swirled pattern. Insert sticks. Freeze until solid, at least 6 hours or up to 1 week.
+
+------------------------------------------------------------
+
+DULCE DE LECHE (homemade caramel)
+Category: sauce
+(Messenger screenshot — title isn't shown; ingredients and method are classic dulce de leche)
+
+Ingredients:
+- 4 cups whole milk
+- 1 1/4 cups sugar
+- 1 teaspoon pure vanilla extract
+- 1/4 teaspoon baking soda
+
+Directions:
+1. Add all the ingredients to a heavy-bottomed saucepan and stir well to dissolve the sugar completely.
+2. Set the saucepan over medium heat and bring to a boil. Reduce heat to very low and simmer, stirring frequently, until thickened and caramelized, about 1 to 1 1/2 hours.
+3. Transfer to a clean glass jar and refrigerate. Will keep for 1-2 weeks.
+
+------------------------------------------------------------
+
+LOCRO DE PAPAS (Potato & Peppers Soup) (magazine clipping)
+Category: soup
+Active 35 min | Total 55 min | Serves 6 (1 1/2 cups each)
+To make ahead: Refrigerate roasted peppers (Steps 1-2) up to 2 days.
+A thick, hearty Ecuadorian potato soup. Seek out achiote paste — there's no good substitute.
+
+Ingredients:
+- 2 large red bell peppers
+- 2 tablespoons unsalted butter
+- 1/3 cup minced shallot
+- 2 large cloves garlic, minced
+- 2 teaspoons ground cumin
+- 1 tablespoon achiote paste
+- 4 cups low-sodium chicken broth, divided
+- 2 pounds Yukon Gold potatoes, peeled and cubed (5 cups)
+- 1 cup whole milk
+- 1/2 teaspoon salt
+- 1/4 teaspoon ground pepper
+- 1 cup crumbled queso fresco
+- 1 ripe avocado, diced
+- 1/4 cup minced fresh cilantro
+
+Directions:
+1. Position rack in upper third of oven; preheat broiler to high.
+2. Place bell peppers on a baking sheet. Broil, turning every 5 minutes, until charred and softened, 15 to 20 minutes. Transfer to a bowl, cover with plastic wrap and let stand for 10 minutes. Peel, seed and chop the peppers; set aside.
+3. Meanwhile, melt butter in a large pot over medium-high heat. Add shallot, garlic and cumin; cook, stirring, until fragrant, about 1 minute. Add achiote paste and 1 cup broth; cook, stirring and breaking up the achiote, until it's dissolved. Add potatoes and the remaining 3 cups broth; bring to a boil. Reduce heat to maintain a simmer, cover and cook until the potatoes are easily pierced with a fork, 15 to 18 minutes.
+4. Puree the soup with an immersion blender or in a regular blender (in batches, if necessary) until very smooth. (Use caution when pureeing hot liquids.)
+5. Add the reserved peppers, milk, salt and pepper to the soup. Bring to a simmer over medium heat. Cook, stirring occasionally, until heated through, 5 to 8 minutes. Serve topped with cheese, avocado and cilantro.
+
+(The same clipping also shows the start of a "Sopa de Albondigas (Meatball Soup)" recipe, but it's cut off at the page edge, so it isn't included.)
+
+------------------------------------------------------------
+
+APPLE RUM CAKE
+Category: dessert
+Recipe by Joyce Hanlon
+
+Ingredients:
+- 4 C. apples
+- 2 C. sugar
+- 1/4 C. rum
+- 3 C. flour
+- 2 tsp. soda
+- 2 eggs, beaten
+- 1 C. oil
+- 1 tsp. cinnamon
+- 1 tsp. salt
+- 1 C. pecans
+- 1 tsp. vanilla
+
+Hot rum glaze: 1 C. sugar, 1/4 C. light rum, 1 stick butter. Boil the 3 ingredients for 4 minutes or till sugar dissolves.
+
+Directions:
+Peel and chop 4 cups apples. Cover with 2 cups sugar and 1/4 cup of rum. Let stand 20 minutes. Mix remaining ingredients and add to apples and sugar. Bake in a bundt baking pan for 45 minutes at 350°F. Make sauce and pour over cake as it comes from oven.
+
+------------------------------------------------------------
+
+CANDIED PECANS
+Category: snack
+Recipe by Joyce Hanlon
+
+Ingredients:
+- 2 cups sugar
+- 1/2 cup boiling water
+- 1 teaspoon ground nutmeg or cinnamon
+- 1/2 teaspoon cream of tartar
+- 4 cups pecan halves
+
+Directions:
+Generously butter a cookie sheet. Combine the sugar, water, nutmeg or cinnamon, and cream of tartar in a 4-6 quart saucepan. On medium-high heat cook, stirring till sugar dissolves. Bring the syrup to a boil and let boil covered 3 more minutes. Uncover the pan. Dip a pastry brush in water and wash down the sides of the pan. Cook the syrup over high heat without stirring, but swirling the pan by the handle, for 2-3 minutes or just till syrup turns the color of lightly brewed tea. Scatter pecans over the syrup and stir quickly with wooden spoon. Cook the syrup 2-3 minutes longer or till it is a golden brown color. Immediately pour nuts and syrup onto the baking pan, working quickly; separate the pecans with a fork. Set the pan on a wire rack and cool the candy until hard, at least an hour, then break into pieces.
+
+------------------------------------------------------------
+
+PLANTATION PRALINES (Pecan Pralines)
+Category: dessert
+Yield: 18 pralines | Recipe by Joyce Hanlon, received from Lurene Belzung Brown
+
+Ingredients:
+- 3 C. granulated sugar
+- 1 tsp. baking soda
+- 1 C. buttermilk
+- Pinch of salt
+- 2 Tbsp. butter
+- 3 C. pecan halves
+
+Directions:
+In a large 8-quart pot, combine first four ingredients. Cook over high heat for 5 minutes, or to 210°F on candy thermometer; be sure to stir frequently and to scrape bottom and crevices of pot. Add butter and pecans. Cook, stirring continuously and scraping bottom and sides of pot, until a little mixture dropped in cold water forms a soft ball (230°F on the candy thermometer). Remove from heat and allow the mixture to cool slightly (about 2 minutes). Then beat with wooden spoon till thick and creamy (about 30 seconds). Drop by tablespoon onto waxed paper. If candy becomes too thick, add one or two teaspoons of water till right consistency.
+
+------------------------------------------------------------
+
+EASY COOKIE BARS (Magic Bars)
+Category: dessert
+Yield: 24 bars | Recipe by Joyce Hanlon
+
+Ingredients:
+- 1/2 cup butter or margarine, melted
+- 1 1/2 cups graham cracker crumbs
+- 1 1/3 cups flake coconut
+- 1 cup semi-sweet chocolate chunks (or chocolate chips)
+- 1 cup chopped roasted pecans
+- 1 can sweetened condensed milk
+
+Directions:
+Mix butter & graham cracker crumbs in medium bowl. Press onto bottom of greased, foil-lined 9x13" pan. Sprinkle with coconut, chocolate & nuts. Pour condensed milk over top. Bake at 350°F for 25-30 minutes or until golden brown. Cool completely on wire rack. Lift out of pan onto cutting board after cooled and cut into bars.
+
+------------------------------------------------------------
+
+CHOCOLATE AND PEANUT BUTTER POPCORN (Lindt)
+Category: snack
+Total 45 minutes
+
+Ingredients:
+- 3 Tbsp (45 ml) vegetable oil
+- 1/2 cup (125 ml) corn kernels (10 cups popped popcorn)
+- 1/2 cup (125 ml) peanuts
+- 2 sticks (225 g) butter
+- 2 cups (500 ml) dark brown sugar
+- 1/2 cup (125 ml) light corn syrup
+- 1/2 cup (125 ml) creamy peanut butter
+- 1/2 tsp (2 ml) baking soda
+- 1 tsp (4 ml) vanilla extract
+- 1 tsp (4 ml) salt
+- 1 bar (100 g) Lindt Excellence A Touch of Sea Salt dark chocolate
+
+Directions:
+1. Preheat oven to 250°F (120°C) and line a baking tray with parchment paper. Set aside.
+2. Pop the corn: In a medium pot, heat the oil and a few kernels over medium-high heat. When they pop, add the rest of the kernels and swirl to coat. Once corn starts popping, turn heat down to medium-low and cover with a tight-fitting lid. Shake the pan continuously over heat until popping slows. Remove from heat when popping stops, pour into a large mixing bowl, add the peanuts and set aside.
+3. Wipe out the pot and return it to medium-high heat. Add butter, brown sugar, corn syrup and peanut butter; stir well and bring to a boil. Turn heat down slightly and keep boiling, stirring often to prevent burning. After 7 minutes, remove from heat and add baking soda, vanilla and salt — the caramel will bubble up, so be careful.
+4. Immediately pour caramel over the popcorn and stir to coat. Spread on the baking sheet and bake, stirring every 15 minutes, about 45 minutes total, separating the kernels as you go. Remove and let cool.
+5. Melt the chocolate in a small heatproof bowl in the microwave in 15-second increments (or in a bain-marie) until just melted. Once the popcorn is cool and set, pour the chocolate over and toss to coat. Let harden before serving.
+
+------------------------------------------------------------
+
+CHOCOLATE CHIP COOKIES (Mom's)
+Category: dessert
+
+Ingredients:
+- 1 C butter, softened
+- 1 C sugar
+- 1 C brown sugar
+- 2 eggs
+- 3 C flour
+- 1 tsp salt
+- 1 tsp baking soda
+- 1 C chocolate chips (or more)
+
+Directions:
+Preheat oven to 375°F. Cream together butter, sugar, brown sugar, and eggs. Mix together dry ingredients, then add to wet mixture. Add chocolate chips and mix. Line baking sheets and place cookie batter by the spoonful. Bake for 9-12 minutes.
+
+------------------------------------------------------------
+
+(OATMEAL) JAM BARS (updated version, with honey)
+Category: dessert
+
+Ingredients:
+- 1 C. and 2 Tbsp. brown sugar
+- 2 Tbsp. honey
+- 2 C. flour
+- 1/4 tsp. salt
+- 2 C. rolled oats
+- 1 C. butter or margarine
+- 1 1/4 C. jam (any flavor is fine; blueberry is my favorite, but raspberry is the typical jam for this)
+
+Directions:
+Combine brown sugar and honey until brown sugar is evenly coated and packable. Mix in the rest of the dry ingredients and mix well with hands. Add melted butter. Continue to mix until all incorporated. Press about 2/3 into a buttered or lined 9x13 pan, patting it down all over. Save the rest of the oat mixture. Spread jam evenly over the pressed mixture. Sprinkle the remaining oat mixture evenly on top of the jam. Bake at 350°F for 25-30 minutes.
+
+------------------------------------------------------------
+
+PARMESAN GARLIC PASTA
+Category: entree
+(Ingredient list only — no amounts or directions in the photo for the sauce/milk)
+
+Ingredients:
+- Parmesan garlic wing sauce
+- Whole milk
+- 1 package cream cheese
+- 8 oz shredded Parmesan cheese
+- 2 pieces chicken breast
+- 1 lb rotini pasta
+
+------------------------------------------------------------
+
+CHOCOLATE CHIP / BROWN SUGAR / BUTTER ROLLS (from a message from Mom)
+Category: bread
+Use dough from any of the bread/roll recipes above (e.g., Mom's Bread or Joyce Hanlon's Dinner Rolls) — Mom suggested making one small loaf and one small pan of these rolls.
+
+Directions:
+Make a rectangle with the dough you are not using in the loaf (about 1/4 in thick). Spread butter over it, then sprinkle with brown sugar, then sprinkle with chocolate chips. Roll up lengthwise somewhat tight and pinch the seam together. Slice "cinnamon roll" style, pushing the chocolate chips that fall out back in. Place in a foil-lined pan and bake for 15-20 minutes.
+(Mom's tip: adding vital wheat gluten to bread/roll dough helps the texture.)
+
+------------------------------------------------------------
+
+MOM'S POT ROAST (pieced together from a text conversation with Mom)
+Category: entree
+
+Ingredients:
+- Roast or chuck roast
+- Seasonings
+- 1 onion, cut up
+- Potatoes
+- Carrots
+- About an inch of water (goes in BEFORE the meat)
+
+Directions:
+Put about an inch of water in the slow cooker, then the meat. Cook it about an hour with seasonings and a cut-up onion. Then add potatoes and carrots after an hour. Cook on high for a long time — the longer it cooks the better; it's done when it's falling apart. If it's cooked through but still chewy, give it another hour or so.
+
+------------------------------------------------------------
+
+CAKE GOOP (Bundt pan release paste)
+Category: sauce
+
+Beat together equal parts (by volume) all-purpose flour, vegetable oil, and shortening until combined. Store in an airtight container in the fridge. To use, spread the goop in the pan with a pastry brush, coating the pan with an even layer. Cakes slide right out, with no grease or discoloration.
+
+------------------------------------------------------------
+
+PICO DE GALLO (from Mom)
+Category: snack
+
+"I don't have a recipe for that. It's just chopped tomato, onion, cilantro (and jalapeno if you wish)." Sometimes a little lime too.
+
+------------------------------------------------------------
+
+KOREAN BEEF (The Recipe Critic)
+Category: entree
+(Screenshot shows ingredients only)
+
+Ingredients:
+- 1 pound lean ground beef (90% lean)
+- 3 garlic cloves, minced
+- 1/4 cup packed brown sugar
+- 1/4 cup reduced-sodium soy sauce
+- 2 teaspoons sesame oil
+- 1/4 teaspoon ground ginger
+- 1/4 teaspoon crushed red pepper flakes
+- 1/4 teaspoon pepper
+- 2 cups hot cooked white or brown rice
+- Sliced green onions and sesame seeds, for garnish

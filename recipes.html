@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Recipes · Recipe Box</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Recipe<span>Box</span></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="recipes.html" data-nav="all">All Recipes</a>
+        <a href="recipes.html?type=entree" data-nav="entree">Entrees</a>
+        <a href="recipes.html?type=dessert" data-nav="dessert">Desserts</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="browse-controls">
+      <h1 id="page-title">All Recipes</h1>
+      <input class="search-input" id="search" type="search" placeholder="Search by name, ingredient, or tag…" aria-label="Search recipes">
+      <div class="chips" id="chips" role="group" aria-label="Filter by type"></div>
+    </div>
+    <div class="result-count" id="count" aria-live="polite"></div>
+    <div class="recipe-grid" id="results"></div>
+    <div class="empty" id="empty" hidden>No recipes match that search. Try a different word or type.</div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Recipe Box</div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script>
+    const params = new URLSearchParams(location.search);
+    let query = params.get("q") || "";
+    let type = params.get("type") || "all";
+
+    const searchEl = document.getElementById("search");
+    const chipsEl = document.getElementById("chips");
+    searchEl.value = query;
+
+    const chipDefs = [{ id: "all", name: "All", emoji: "" }, ...CATEGORIES];
+    chipsEl.innerHTML = chipDefs.map((c) =>
+      `<button class="chip" type="button" data-type="${c.id}">${c.emoji} ${c.name}</button>`
+    ).join("");
+
+    function render() {
+      const results = searchRecipes(query, type);
+      document.getElementById("results").innerHTML = results.map(recipeCardHtml).join("");
+      document.getElementById("empty").hidden = results.length > 0;
+      document.getElementById("count").textContent =
+        `${results.length} recipe${results.length === 1 ? "" : "s"}` + (query ? ` matching "${query}"` : "");
+
+      const title = type === "all" ? "All Recipes" : categoryById(type).name;
+      document.getElementById("page-title").textContent = title;
+      document.title = `${title} · Recipe Box`;
+
+      chipsEl.querySelectorAll(".chip").forEach((b) =>
+        b.classList.toggle("active", b.dataset.type === type));
+      document.querySelectorAll(".nav a[data-nav]").forEach((a) =>
+        a.classList.toggle("active", a.dataset.nav === type));
+
+      // Keep the URL in sync so results can be bookmarked/shared.
+      const p = new URLSearchParams();
+      if (query) p.set("q", query);
+      if (type !== "all") p.set("type", type);
+      history.replaceState(null, "", "recipes.html" + (p.toString() ? "?" + p : ""));
+    }
+
+    searchEl.addEventListener("input", () => { query = searchEl.value.trim(); render(); });
+    chipsEl.addEventListener("click", (e) => {
+      const btn = e.target.closest(".chip");
+      if (!btn) return;
+      type = btn.dataset.type;
+      render();
+    });
+
+    loadRecipes().then(render);
+  </script>
+</body>
+</html>
