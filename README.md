@@ -16,10 +16,10 @@ You can edit it right on GitHub (open the file, click the pencil icon, then **Co
 the site updates within a minute or two.
 
 ### Adding a recipe from a photo
-Click **+ Add recipe** on the site. It opens the private Recipe Inbox page on claude.ai
-(https://claude.ai/artifact/JEoWe4Y1Pf7oDjzLF7nLAP), where you add photos, have Claude type them
-up, fix anything, and click **Approve**. Then ask Claude Code to "add the approved recipes from my
-Recipe Inbox": it copies them into `data/recipes.txt`, pushes, and marks them "On the site".
+Click **+ Add recipe** on the site. Anyone can send photos from https://recipe-box-submit.lawevanp.workers.dev/, and
+you review them at https://recipe-box-submit.lawevanp.workers.dev/admin and click **Approve**.
+Then ask Claude Code to "add the approved submissions to Recipe Box": it types them up, adds
+them to `data/recipes.txt`, and pushes. Setup details are in [worker/SETUP.md](worker/SETUP.md).
 
 Categories: `breakfast`, `entree`, `side`, `soup`, `bread`, `dessert`, `snack`, `sauce`.
 To add or rename categories, edit the `CATEGORIES` list at the top of [`js/app.js`](js/app.js).
