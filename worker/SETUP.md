@@ -43,18 +43,33 @@ a credit card or your own domain.
    - Type **Secret**, name `TURNSTILE_SECRET_KEY`, value: the secret key
 5. Click **Deploy**.
 
-## 7. Try it
+## 7. (Recommended) Clean up photos automatically every day
+Once a submission is on the site, the worker deletes its photos from storage. That already
+happens whenever you open `/admin`; a daily trigger makes sure it happens even if you don't.
+1. In the worker's **Settings → Trigger events** (or **Triggers**), click **Add** → **Cron trigger**.
+2. Choose a daily schedule (for example `0 9 * * *`), and click **Add** / **Deploy**.
+
+## 8. Try it
 - Public page: `https://recipe-box-submit.<yourname>.workers.dev/`. Send yourself a test recipe.
+- Photo page: the same address with `/photos` on the end (also linked from every recipe on the site).
 - Review page: the same address with `/admin` on the end. Sign in with your password.
 
 Then send Claude Code the public page's address. It will point the site's **+ Add recipe** button
 at it.
 
 ## Day to day
-- People send recipes from the public page. They wait under **To review** on `/admin`.
-- **Approve** the ones you want; **Delete** the rest.
-- Ask Claude Code to "add the approved submissions to Recipe Box". It reads the approved photos,
-  types them up, adds them to the site, and they move to **On the site**.
+- People send recipes from the public page, and dish photos from `/photos` (or the
+  **Add a cover photo / Add your photo** button on any recipe). They wait under **To review** on `/admin`.
+- **Approve** the ones you want; **Delete** the rest. For dish photos you can untick ones you
+  don't want, choose the cover, and fix the "photo by" names before approving.
+- Ask Claude Code to "add the approved submissions to Recipe Box". It types up recipes, copies
+  dish photos into the site, and they move to **On the site**. Their photos are then deleted from
+  Cloudflare storage, since the site keeps its own copy.
+
+## Updating the worker code
+When `worker/worker.js` changes, repeat step 3.3–3.4: open the worker, **Edit code**, paste the
+new file over the old one, and **Deploy**. Bindings and secrets stay as they are.
 
 Free-plan limits are far above what a family recipe site needs: about 1,000 saves a day
-(each submission uses a few) and 1 GB of storage (thousands of photos).
+(each submission uses a few) and 1 GB of storage (thousands of photos). Photos only stay in
+storage until they're on the site.

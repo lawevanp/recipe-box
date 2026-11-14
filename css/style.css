@@ -319,6 +319,58 @@ ol.steps { padding-left: 22px; margin: 0 0 12px; }
   overflow: hidden;
 }
 
+/* Recipe photos */
+.recipe-cover { margin: 16px 0; }
+.recipe-cover img {
+  width: 100%;
+  max-height: 460px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  display: block;
+  background: var(--chip);
+}
+figcaption { color: var(--muted); font-size: 0.85rem; margin-top: 6px; }
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+.photo-grid figure { margin: 0; }
+.photo-grid img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius);
+  display: block;
+  background: var(--chip);
+}
+.photo-open { padding: 0; border: 0; background: none; cursor: zoom-in; display: block; width: 100%; }
+.photo-open:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: var(--radius); }
+.btn-quiet { background: var(--surface); color: var(--accent); border: 1px solid var(--accent); margin-left: 8px; }
+.btn-quiet:hover { background: var(--chip); }
+.lightbox {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  max-width: min(96vw, 1200px);
+  max-height: 94vh;
+}
+.lightbox::backdrop { background: rgba(0, 0, 0, 0.85); }
+.lightbox img { max-width: 100%; max-height: 86vh; display: block; margin: 0 auto; border-radius: 8px; }
+.lightbox p { color: #eee; text-align: center; margin: 8px 0 0; }
+.lightbox-close {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  border: 0;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 1.1rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+  cursor: pointer;
+}
+
 /* Footer */
 .site-footer {
   border-top: 1px solid var(--border);
@@ -330,6 +382,7 @@ ol.steps { padding-left: 22px; margin: 0 0 12px; }
 }
 
 @media print {
-  .site-header, .site-footer, .back-link, .print-link { display: none; }
+  .site-header, .site-footer, .back-link, .print-link, .recipe-photos, .lightbox { display: none; }
+  .recipe-cover img { max-height: 240px; }
   body { background: #fff; color: #000; }
 }

@@ -21,6 +21,14 @@ you review them at https://recipe-box-submit.lawevanp.workers.dev/admin and clic
 Then ask Claude Code to "add the approved submissions to Recipe Box": it types them up, adds
 them to `data/recipes.txt`, and pushes. Setup details are in [worker/SETUP.md](worker/SETUP.md).
 
+### Recipe photos
+Each recipe can have a cover photo (shown at the top and on its card) and extra photos, each
+credited to whoever made or took it. People add them when sending a new recipe, or from the
+**Add a cover photo / Add your photo** button on any recipe page. They go through the same
+approval on `/admin`. Approved photos are copied into the [`photos/`](photos/) folder and listed in
+the recipe with lines like `Cover photo: photos/apple-pie-1.jpg | by Jane`; the copies in
+Cloudflare are then deleted automatically.
+
 Categories: `breakfast`, `entree`, `side`, `soup`, `bread`, `dessert`, `snack`, `sauce`.
 To add or rename categories, edit the `CATEGORIES` list at the top of [`js/app.js`](js/app.js).
 

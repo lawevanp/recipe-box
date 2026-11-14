@@ -68,6 +68,11 @@
         <div><span class="badge">${cat.emoji} ${escapeHtml(cat.name)}</span></div>
         <h1>${escapeHtml(r.title)}</h1>
         ${r.subtitle ? `<p class="lead">${escapeHtml(r.subtitle)}</p>` : ""}
+        ${r.cover ? `<figure class="recipe-cover">
+            <button type="button" class="photo-open" data-photo="-1" aria-label="View cover photo larger">
+              <img src="${escapeHtml(r.cover.src)}" alt="${escapeHtml(r.title)}"></button>
+            ${r.cover.by ? `<figcaption>📷 ${escapeHtml(r.cover.by)}</figcaption>` : ""}
+          </figure>` : ""}
         ${facts ? `<div class="facts">${facts}</div>` : ""}
         ${r.sections.map((s) => {
           const checkable = s.heading && !NOT_INGREDIENTS.test(s.heading);
@@ -76,8 +81,35 @@
             ${s.blocks.map((b) => blockHtml(b, checkable)).join("")}
           </section>`;
         }).join("")}
-        <p class="print-link"><button class="btn" type="button" onclick="print()">Print recipe</button></p>
+        ${r.photos.length ? `<section class="recipe-section recipe-photos">
+            <h2>Photos</h2>
+            <div class="photo-grid">${r.photos.map((p, i) => `<figure>
+              <button type="button" class="photo-open" data-photo="${i}" aria-label="View photo ${i + 1} larger">
+                <img src="${escapeHtml(p.src)}" alt="Photo of ${escapeHtml(r.title)}" loading="lazy"></button>
+              ${p.by ? `<figcaption>📷 ${escapeHtml(p.by)}</figcaption>` : ""}
+            </figure>`).join("")}</div>
+          </section>` : ""}
+        <p class="print-link">
+          <button class="btn" type="button" onclick="print()">Print recipe</button>
+          <a class="btn btn-quiet" href="${addPhotoUrl(r)}">📷 ${r.cover ? "Add your photo" : "Add a cover photo"}</a>
+        </p>
+        <dialog class="lightbox" id="lightbox">
+          <form method="dialog"><button class="lightbox-close" aria-label="Close">✕</button></form>
+          <img id="lightbox-img" alt=""><p id="lightbox-cap"></p>
+        </dialog>
       `;
+
+      // Tap a photo to see it larger.
+      const box = document.getElementById("lightbox");
+      el.querySelectorAll(".photo-open").forEach((b) => b.addEventListener("click", () => {
+        const i = Number(b.dataset.photo);
+        const p = i < 0 ? r.cover : r.photos[i];
+        document.getElementById("lightbox-img").src = p.src;
+        document.getElementById("lightbox-img").alt = b.querySelector("img").alt;
+        document.getElementById("lightbox-cap").textContent = p.by ? `📷 ${p.by}` : "";
+        box.showModal();
+      }));
+      box.addEventListener("click", (e) => { if (e.target === box) box.close(); });
     });
   </script>
 </body>

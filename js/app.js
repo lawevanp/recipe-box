@@ -11,6 +11,9 @@ const CATEGORIES = [
   { id: "sauce", name: "Sauces & Basics", emoji: "🥫" },
 ];
 
+// Public pages (Cloudflare worker) for sending in recipes and photos.
+const SUBMIT_URL = "https://recipe-box-submit.lawevanp.workers.dev/";
+
 let RECIPES = [];
 
 function categoryById(id) {
@@ -53,7 +56,8 @@ function parseRecipeBlock(block) {
   const split = fullTitle.match(/^(.+?)\s+(?:\(|—\s*)(.*)$/);
   const title = split ? split[1] : fullTitle;
   const subtitle = split ? split[2].replace(/\)$/, "").replace(/\) \(/g, " · ").replace(/\) —\s*/, " · ") : "";
-  const recipe = { title, subtitle, fullTitle, category: "", sections: [], intro: [], text: block };
+  const recipe = { title, subtitle, fullTitle, rawTitle: rawLines[0].trim(), category: "",
+    cover: null, photos: [], sections: [], intro: [], text: block };
   let section = { heading: "", blocks: [] };
   recipe.sections.push(section);
   let last = null; // current list/paragraph block, reset by blank lines
@@ -64,6 +68,14 @@ function parseRecipeBlock(block) {
 
     const cat = line.match(/^Category:\s*(.+)$/i);
     if (cat) { recipe.category = cat[1].trim().toLowerCase(); continue; }
+
+    // "Cover photo: photos/x.jpg | by Jane" and "Photo: photos/y.jpg | by Sam"
+    const pic = line.match(/^(Cover photo|Photo):\s*(photos\/[\w.-]+\.(?:jpe?g|png|webp|gif))\s*(?:\|\s*(?:by\s+)?(.*))?$/i);
+    if (pic) {
+      const photo = { src: pic[2], by: (pic[3] || "").trim() };
+      if (/^cover/i.test(pic[1])) recipe.cover = photo; else recipe.photos.push(photo);
+      continue;
+    }
 
     if (isHeading(line)) {
       section = { heading: line.slice(0, -1), blocks: [] };
@@ -169,7 +181,9 @@ function recipeCardHtml(r) {
   const time = timeLabel(r);
   return `
     <a class="recipe-card" href="recipe.html?id=${encodeURIComponent(r.id)}">
-      <div class="thumb">${cat.emoji}</div>
+      <div class="thumb">${r.cover
+        ? `<img src="${escapeHtml(r.cover.src)}" alt="" loading="lazy">`
+        : cat.emoji}</div>
       <div class="body">
         <span class="badge">${escapeHtml(cat.name)}</span>
         <h3>${escapeHtml(r.title)}</h3>
@@ -181,6 +195,10 @@ function recipeCardHtml(r) {
         </div>
       </div>
     </a>`;
+}
+
+function addPhotoUrl(r) {
+  return `${SUBMIT_URL}photos?recipe=${encodeURIComponent(r.rawTitle)}`;
 }
 
 function setFooterYear() {

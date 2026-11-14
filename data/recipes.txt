@@ -22,6 +22,15 @@ HOW TO ADD A RECIPE
   Lines starting with "- " become a list; lines starting with "1. " become numbered steps.
   Anything else is shown as a paragraph.
 
+PHOTOS (optional)
+  Photo files go in the photos/ folder. Add lines like these under the Category: line:
+
+    Cover photo: photos/apple-pie-1.jpg | by Jane
+    Photo: photos/apple-pie-2.jpg | by Sam
+
+  The cover photo is shown at the top of the recipe and on its card. Other photos are shown
+  at the bottom. The "| by Name" part is optional and credits who made or took it.
+
 HOW TO REMOVE A RECIPE
   Delete everything from its title down to the next line of dashes.
 
