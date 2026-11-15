@@ -152,7 +152,8 @@ async function siteRecipes() {
     const parts = (await r.text()).split(/^={10,}\s*$/m);
     return parts[parts.length - 1].split(/^-{10,}\s*$/m).map((b) => b.trim()).filter(Boolean).map((b) => {
       const title = b.split(/\r?\n/)[0].trim();
-      return { title, name: prettyTitle(title), hasCover: /^Cover photo:/im.test(b) };
+      const cover = b.match(/^Cover photo:\s*(photos\/[\w.-]+\.(?:jpe?g|png|webp|gif))/im);
+      return { title, name: prettyTitle(title), hasCover: !!cover, coverUrl: cover ? SITE_URL + cover[1] : "" };
     }).sort((a, b) => a.name.localeCompare(b.name));
   } catch { return []; }
 }
@@ -219,6 +220,11 @@ details summary{cursor:pointer;color:var(--bad);font-weight:600;list-style:none;
 .ph .star{position:absolute;top:6px;left:6px;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;padding:2px 8px;border-radius:999px;background:var(--accent);color:var(--accent-ink)}
 .nocover{font-weight:400;color:var(--muted);display:flex;gap:6px;align-items:center;margin:0;cursor:pointer}
 .switch{color:var(--muted);margin:0}
+.coverq{border:1px solid var(--accent);border-radius:10px;padding:14px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.coverq img{width:96px;height:72px;object-fit:cover;border-radius:6px;border:1px solid var(--line);background:var(--chip)}
+.coverq>div{flex:1 1 220px;display:grid;gap:4px}
+.coverq .opt{display:flex;gap:8px;align-items:center;margin:0;cursor:pointer;font-size:1.02rem}
+.coverq input[type=checkbox]{width:20px;height:20px;accent-color:var(--accent)}
 `;
 
 function page(title, body) {
@@ -237,9 +243,14 @@ function shrink(file,max,q){return (async()=>{try{const bmp=await createImageBit
   c.getContext("2d").drawImage(bmp,0,0,c.width,c.height);
   return await new Promise((r)=>c.toBlob((b)=>r(b||file),"image/jpeg",q));}catch(e){return file;}})();}
 function dishPicker(opts){
-  // galleryFirst: the recipe already has a cover, so photos just join the gallery unless the sender suggests one as the new cover.
-  const items=[];let cover=0,galleryFirst=false;const list=document.getElementById(opts.list);const none=document.getElementById(opts.none);
+  // opts.toggle (photos page): one yes/no "use my photo as the cover" checkbox instead of a cover pick on every photo.
+  // Only when it's ticked and there are several photos does each photo get a "use this one" choice.
+  const items=[];let cover=0;const list=document.getElementById(opts.list);const none=opts.none&&document.getElementById(opts.none);
+  const tog=opts.toggle&&document.getElementById(opts.toggle);const box=opts.toggleBox&&document.getElementById(opts.toggleBox);
   function render(){
+    if(tog){if(!tog.checked||!items.length)cover=-1;else if(cover<0||cover>=items.length)cover=0;}
+    if(box)box.hidden=!items.length;
+    const pick=!tog||(tog.checked&&items.length>1);
     list.replaceChildren(...items.map((it,i)=>{
       const d=document.createElement("div");d.className="ph";
       const img=document.createElement("img");img.src=it.url;img.alt="Dish photo "+(i+1);
@@ -248,25 +259,26 @@ function dishPicker(opts){
       const pb=document.createElement("div");pb.className="pb";
       const by=document.createElement("input");by.type="text";by.maxLength=80;by.placeholder="Photo by (optional)";by.value=it.by;
       by.setAttribute("aria-label","Who made or took photo "+(i+1));by.oninput=()=>{it.by=by.value;};
-      const lab=document.createElement("label");lab.className="opt";
-      const r=document.createElement("input");r.type="radio";r.name="coverpick";r.checked=cover===i;r.onchange=()=>{cover=i;render();};
-      lab.append(r,galleryFirst?" Suggest as the new cover":" Cover photo");pb.append(by,lab);d.append(img,x,pb);
-      if(cover===i){const s=document.createElement("span");s.className="star";s.textContent=galleryFirst?"Suggested cover":"Cover";d.append(s);}
+      pb.append(by);
+      if(pick){const lab=document.createElement("label");lab.className="opt";
+        const r=document.createElement("input");r.type="radio";r.name="coverpick";r.checked=cover===i;r.onchange=()=>{cover=i;render();};
+        lab.append(r,tog?" Use this one as the cover":" Cover photo");pb.append(lab);}
+      d.append(img,x,pb);
+      if(cover===i){const s=document.createElement("span");s.className="star";s.textContent=tog?"New cover":"Cover";d.append(s);}
       return d;}));
-    if(none){none.hidden=!items.length;none.querySelector("input").checked=cover<0&&items.length>0;
-      none.querySelector("span").textContent=galleryFirst?" Just add to the gallery (keep the current cover)":" None of these as the cover photo";}
+    if(none){none.hidden=!items.length;none.querySelector("input").checked=cover<0&&items.length>0;}
   }
   document.getElementById(opts.input).addEventListener("change",(e)=>{
     for(const f of e.target.files){if(items.length>=opts.max)break;items.push({file:f,url:URL.createObjectURL(f),by:""});}
-    e.target.value="";if(cover<0&&items.length&&!galleryFirst)cover=0;render();});
+    e.target.value="";if(cover<0&&items.length&&!tog)cover=0;render();});
   if(none)none.querySelector("input").addEventListener("change",()=>{cover=-1;render();});
-  return{count:()=>items.length,reset:()=>{items.length=0;cover=galleryFirst?-1:0;render();},
-    setGalleryFirst(v){galleryFirst=!!v;cover=galleryFirst?-1:0;render();},
+  if(tog)tog.addEventListener("change",render);
+  return{count:()=>items.length,reset:()=>{items.length=0;cover=0;render();},render,
     async addTo(fd,defaultBy){for(const [i,it] of items.entries()){fd.append("dish",await shrink(it.file,1600,0.82),"dish-"+(i+1)+".jpg");fd.append("dishBy",it.by.trim()||defaultBy);}
       fd.set("cover",String(items.length?cover:-1));}};
 }`;
 
-function dishSection(heading, hint) {
+function dishSection(heading, hint, { coverPicks = true } = {}) {
   return `
   <div><h2 class="section-label">${heading}</h2><p class="hint" style="margin:2px 0 0">${hint}</p></div>
   <label class="drop" for="dish">
@@ -275,16 +287,33 @@ function dishSection(heading, hint) {
     Up to ${MAX_DISH_PHOTOS}. You can add who made it or took each photo.
   </label>
   <div class="dish" id="dishlist"></div>
-  <label class="nocover" id="nocover" hidden><input type="radio" name="coverpick"><span> None of these as the cover photo</span></label>`;
+  ${coverPicks ? `<label class="nocover" id="nocover" hidden><input type="radio" name="coverpick"> None of these as the cover photo</label>` : ""}`;
 }
+
+// The photos page's cover question. Its wording and the current cover depend on the recipe, so
+// the page script fills them in (and refills them if the recipe dropdown changes).
+const COVER_QUESTION = `
+  <div class="coverq" id="coverbox" hidden>
+    <img id="curcover" alt="Current cover photo" hidden onerror="this.hidden=true">
+    <div>
+      <label class="opt"><input type="checkbox" id="usecover"> <span id="coverask"></span></label>
+      <span class="hint" id="coverhint"></span>
+    </div>
+  </div>`;
 
 function submitScript(env, { needRecipePhotos }) {
   return `${env.TURNSTILE_SITE_KEY ? `<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>` : ""}
 <script>${DISH_PICKER}
 const MAX=${MAX_PHOTOS}; let files=[];
 const $=(id)=>document.getElementById(id);
-const dish=dishPicker({input:"dish",list:"dishlist",none:"nocover",max:${MAX_DISH_PHOTOS}});
-if($("target")){const t=$("target"),sync=()=>dish.setGalleryFirst(t.selectedOptions[0]&&t.selectedOptions[0].dataset.cover==="1");
+const dish=dishPicker({input:"dish",list:"dishlist",none:"nocover",toggle:"usecover",toggleBox:"coverbox",max:${MAX_DISH_PHOTOS}});
+if($("target")){const t=$("target");
+  // Ask about the cover in words that fit this recipe: replace the current one, or be the first one.
+  const sync=()=>{const el=t.tagName==="SELECT"?t.selectedOptions[0]:t;const cur=(el&&el.dataset.cover)||"";
+    $("usecover").checked=!cur;$("curcover").hidden=!cur;if(cur)$("curcover").src=cur;
+    $("coverask").textContent=cur?"Replace the current cover photo with my photo":"Use my photo as this recipe's cover photo";
+    $("coverhint").textContent=cur?"That's the current cover. A new cover appears once it's approved.":"This recipe doesn't have a cover photo yet.";
+    dish.render();};
   t.addEventListener("change",sync);sync();}
 if($("photos"))$("photos").addEventListener("change",(e)=>{files=[...e.target.files].slice(0,MAX);
   $("thumbs").replaceChildren(...files.map((f)=>Object.assign(document.createElement("img"),{src:URL.createObjectURL(f),alt:""})));});
@@ -347,23 +376,30 @@ async function photosPage(env, url) {
   const recipes = await siteRecipes();
   const want = url.searchParams.get("recipe") || "";
   const picked = recipes.find((r) => r.title === want);
-  return page("Add Recipe Photos", `
+  const coverAttr = (r) => (r.coverUrl ? ` data-cover="${esc(r.coverUrl)}"` : "");
+  // Opened from a recipe's "Add a photo" button: the recipe is fixed, no list to choose from.
+  const recipeField = picked
+    ? `<input type="hidden" id="target" name="target" value="${esc(picked.title)}"${coverAttr(picked)}>`
+    : `<div><label for="target">Recipe</label>
+    <select id="target" name="target" required>
+      <option value="">Choose a recipe…</option>
+      ${recipes.map((r) => `<option value="${esc(r.title)}"${coverAttr(r)}>${esc(r.name)}${r.hasCover ? "" : " · needs a cover photo"}</option>`).join("")}
+    </select>
+    ${recipes.length ? "" : `<p class="hint">Couldn't load the recipe list. Please try again in a minute.</p>`}</div>`;
+  return page(picked ? `Add a Photo · ${picked.name}` : "Add Recipe Photos", `
 <header>
-  <h1>Add photos to a recipe</h1>
-  <p class="sub">Made something from <a href="${SITE_URL}">Recipe Box</a>? Share a photo of it. Photos are checked before they appear on the site.</p>
-  <p class="switch">Sending a whole new recipe instead? <a href="/">Share a recipe</a></p>
+  <h1>${picked ? `Add a photo of ${esc(picked.name)}` : "Add photos to a recipe"}</h1>
+  <p class="sub">Made ${picked ? "it" : `something from <a href="${SITE_URL}">Recipe Box</a>`}? Share how it turned out. Photos are checked before they appear on the site.</p>
+  ${picked ? `<p class="switch"><a href="/photos">Add photos to a different recipe</a></p>`
+           : `<p class="switch">Sending a whole new recipe instead? <a href="/">Share a recipe</a></p>`}
 </header>
 <form class="card" id="f" novalidate>
   <input type="hidden" name="kind" value="photos">
-  <div><label for="target">Recipe</label>
-    <select id="target" name="target" required>
-      <option value="">Choose a recipe…</option>
-      ${recipes.map((r) => `<option value="${esc(r.title)}"${r.hasCover ? ' data-cover="1"' : ""}${r === picked ? " selected" : ""}>${esc(r.name)}${r.hasCover ? "" : " · needs a cover photo"}</option>`).join("")}
-    </select>
-    ${recipes.length ? "" : `<p class="hint">Couldn't load the recipe list. Please try again in a minute.</p>`}</div>
+  ${recipeField}
   <div><label for="name">Your name <span class="hint">(optional, shown with your photos)</span></label>
     <input id="name" name="name" type="text" maxlength="80" autocomplete="name"></div>
-  ${dishSection("Your photos", "They're added to the recipe's photo gallery. If it already has a cover photo, you can suggest one of yours as the new cover, and the reviewer decides.")}
+  ${dishSection("Your photos", "They go in the recipe's photo gallery.", { coverPicks: false })}
+  ${COVER_QUESTION}
   <div><label for="notes">Notes <span class="hint">(optional, for the reviewer)</span></label>
     <textarea id="notes" name="notes" maxlength="1000"></textarea></div>
   ${spamFields(env)}

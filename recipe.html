@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recipe · Recipe Box</title>
-  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="stylesheet" href="css/style.css?v=3">
 </head>
 <body>
   <header class="site-header">
@@ -89,9 +89,16 @@
               ${p.by ? `<figcaption>📷 ${escapeHtml(p.by)}</figcaption>` : ""}
             </figure>`).join("")}</div>
           </section>` : ""}
+        ${typeof addPhotoUrl === "function" ? `<section class="share-photo">
+            <div>
+              <h2>Made this?</h2>
+              <p>${r.cover ? "Share a photo of how it turned out. You can also suggest it as the new cover photo."
+                           : "Share a photo of how it turned out. It could become this recipe's cover photo."}</p>
+            </div>
+            <a class="btn" href="${addPhotoUrl(r)}">📷 Add a photo</a>
+          </section>` : ""}
         <p class="print-link">
-          <button class="btn" type="button" onclick="print()">Print recipe</button>
-          ${typeof addPhotoUrl === "function" ? `<a class="btn btn-quiet" href="${addPhotoUrl(r)}">📷 ${r.cover ? "Add your photo" : "Add a cover photo"}</a>` : ""}
+          <button class="btn btn-quiet" type="button" onclick="print()">Print recipe</button>
         </p>
         <dialog class="lightbox" id="lightbox">
           <form method="dialog"><button class="lightbox-close" aria-label="Close">✕</button></form>
