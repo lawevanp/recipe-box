@@ -237,7 +237,8 @@ function shrink(file,max,q){return (async()=>{try{const bmp=await createImageBit
   c.getContext("2d").drawImage(bmp,0,0,c.width,c.height);
   return await new Promise((r)=>c.toBlob((b)=>r(b||file),"image/jpeg",q));}catch(e){return file;}})();}
 function dishPicker(opts){
-  const items=[];let cover=0;const list=document.getElementById(opts.list);const none=document.getElementById(opts.none);
+  // galleryFirst: the recipe already has a cover, so photos just join the gallery unless the sender suggests one as the new cover.
+  const items=[];let cover=0,galleryFirst=false;const list=document.getElementById(opts.list);const none=document.getElementById(opts.none);
   function render(){
     list.replaceChildren(...items.map((it,i)=>{
       const d=document.createElement("div");d.className="ph";
@@ -249,16 +250,18 @@ function dishPicker(opts){
       by.setAttribute("aria-label","Who made or took photo "+(i+1));by.oninput=()=>{it.by=by.value;};
       const lab=document.createElement("label");lab.className="opt";
       const r=document.createElement("input");r.type="radio";r.name="coverpick";r.checked=cover===i;r.onchange=()=>{cover=i;render();};
-      lab.append(r," Cover photo");pb.append(by,lab);d.append(img,x,pb);
-      if(cover===i){const s=document.createElement("span");s.className="star";s.textContent="Cover";d.append(s);}
+      lab.append(r,galleryFirst?" Suggest as the new cover":" Cover photo");pb.append(by,lab);d.append(img,x,pb);
+      if(cover===i){const s=document.createElement("span");s.className="star";s.textContent=galleryFirst?"Suggested cover":"Cover";d.append(s);}
       return d;}));
-    if(none){none.hidden=!items.length;none.querySelector("input").checked=cover<0&&items.length>0;}
+    if(none){none.hidden=!items.length;none.querySelector("input").checked=cover<0&&items.length>0;
+      none.querySelector("span").textContent=galleryFirst?" Just add to the gallery (keep the current cover)":" None of these as the cover photo";}
   }
   document.getElementById(opts.input).addEventListener("change",(e)=>{
     for(const f of e.target.files){if(items.length>=opts.max)break;items.push({file:f,url:URL.createObjectURL(f),by:""});}
-    e.target.value="";if(cover<0&&items.length&&!opts.keepNone)cover=0;render();});
+    e.target.value="";if(cover<0&&items.length&&!galleryFirst)cover=0;render();});
   if(none)none.querySelector("input").addEventListener("change",()=>{cover=-1;render();});
-  return{count:()=>items.length,reset:()=>{items.length=0;cover=0;render();},
+  return{count:()=>items.length,reset:()=>{items.length=0;cover=galleryFirst?-1:0;render();},
+    setGalleryFirst(v){galleryFirst=!!v;cover=galleryFirst?-1:0;render();},
     async addTo(fd,defaultBy){for(const [i,it] of items.entries()){fd.append("dish",await shrink(it.file,1600,0.82),"dish-"+(i+1)+".jpg");fd.append("dishBy",it.by.trim()||defaultBy);}
       fd.set("cover",String(items.length?cover:-1));}};
 }`;
@@ -269,10 +272,10 @@ function dishSection(heading, hint) {
   <label class="drop" for="dish">
     <input id="dish" type="file" accept="image/*" multiple>
     <strong>Tap to add photos of the dish</strong>
-    Up to ${MAX_DISH_PHOTOS}. Pick one as the cover; add who made it or took the photo.
+    Up to ${MAX_DISH_PHOTOS}. You can add who made it or took each photo.
   </label>
   <div class="dish" id="dishlist"></div>
-  <label class="nocover" id="nocover" hidden><input type="radio" name="coverpick"> None of these as the cover photo</label>`;
+  <label class="nocover" id="nocover" hidden><input type="radio" name="coverpick"><span> None of these as the cover photo</span></label>`;
 }
 
 function submitScript(env, { needRecipePhotos }) {
@@ -281,6 +284,8 @@ function submitScript(env, { needRecipePhotos }) {
 const MAX=${MAX_PHOTOS}; let files=[];
 const $=(id)=>document.getElementById(id);
 const dish=dishPicker({input:"dish",list:"dishlist",none:"nocover",max:${MAX_DISH_PHOTOS}});
+if($("target")){const t=$("target"),sync=()=>dish.setGalleryFirst(t.selectedOptions[0]&&t.selectedOptions[0].dataset.cover==="1");
+  t.addEventListener("change",sync);sync();}
 if($("photos"))$("photos").addEventListener("change",(e)=>{files=[...e.target.files].slice(0,MAX);
   $("thumbs").replaceChildren(...files.map((f)=>Object.assign(document.createElement("img"),{src:URL.createObjectURL(f),alt:""})));});
 $("f").addEventListener("submit",async(e)=>{e.preventDefault();const st=$("status"),btn=$("send");
@@ -353,12 +358,12 @@ async function photosPage(env, url) {
   <div><label for="target">Recipe</label>
     <select id="target" name="target" required>
       <option value="">Choose a recipe…</option>
-      ${recipes.map((r) => `<option value="${esc(r.title)}"${r === picked ? " selected" : ""}>${esc(r.name)}${r.hasCover ? "" : " · needs a cover photo"}</option>`).join("")}
+      ${recipes.map((r) => `<option value="${esc(r.title)}"${r.hasCover ? ' data-cover="1"' : ""}${r === picked ? " selected" : ""}>${esc(r.name)}${r.hasCover ? "" : " · needs a cover photo"}</option>`).join("")}
     </select>
     ${recipes.length ? "" : `<p class="hint">Couldn't load the recipe list. Please try again in a minute.</p>`}</div>
   <div><label for="name">Your name <span class="hint">(optional, shown with your photos)</span></label>
     <input id="name" name="name" type="text" maxlength="80" autocomplete="name"></div>
-  ${dishSection("Your photos", "If the recipe already has a cover photo, the reviewer decides whether yours replaces it.")}
+  ${dishSection("Your photos", "They're added to the recipe's photo gallery. If it already has a cover photo, you can suggest one of yours as the new cover, and the reviewer decides.")}
   <div><label for="notes">Notes <span class="hint">(optional, for the reviewer)</span></label>
     <textarea id="notes" name="notes" maxlength="1000"></textarea></div>
   ${spamFields(env)}
@@ -492,6 +497,8 @@ async function adminPage(request, env, url) {
   const shown = subs.filter((s) => s.shown === tab);
   const labels = { pending: "To review", approved: "Approved", added: "On the site" };
   const pill = { pending: "Waiting for you", approved: "Approved", added: "On the site" };
+  const withCover = shown.some((s) => kindOf(s) === "photos")
+    ? new Set((await siteRecipes()).filter((r) => r.hasCover).map((r) => r.title)) : new Set();
 
   const cards = shown.map((s) => {
     const isPhotos = kindOf(s) === "photos";
@@ -513,7 +520,8 @@ async function adminPage(request, env, url) {
       </div>
     </div>`).join("")}
   </div>
-  ${editable ? `<label class="nocover"><input type="radio" name="cover" value="" form="ap-${s.id}"${dish.some((d) => d.cover) ? "" : " checked"}> No cover photo from this submission</label>` : ""}`;
+  ${editable ? `<label class="nocover"><input type="radio" name="cover" value="" form="ap-${s.id}"${dish.some((d) => d.cover) ? "" : " checked"}> ${isPhotos && withCover.has(s.target) ? "Gallery only (keep the current cover)" : "No cover photo from this submission"}</label>` : ""}
+  ${editable && isPhotos && withCover.has(s.target) ? `<p class="hint" style="margin:0">This recipe already has a cover. Picking a cover here replaces it when approved (the old cover stays in the gallery).</p>` : ""}`;
 
     return `
 <article class="card">
