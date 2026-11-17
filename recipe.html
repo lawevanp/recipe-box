@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recipe · Recipe Box</title>
-  <link rel="stylesheet" href="css/style.css?v=3">
+  <link rel="stylesheet" href="css/style.css?v=4">
 </head>
 <body>
   <header class="site-header">
@@ -15,6 +15,7 @@
         <a href="recipes.html">All Recipes</a>
         <a href="recipes.html?type=entree">Entrees</a>
         <a href="recipes.html?type=dessert">Desserts</a>
+        <a href="recipes.html?type=favorites">★ Favorites</a>
         <a class="nav-add" href="https://recipe-box-submit.lawevanp.workers.dev/">+ Add recipe</a>
       </nav>
     </div>
@@ -28,7 +29,7 @@
     <div class="container">© <span id="year"></span> Recipe Box</div>
   </footer>
 
-  <script src="js/app.js?v=2"></script>
+  <script src="js/app.js?v=3"></script>
   <script>
     // Sections whose bullet lists are ingredients get tick-off checkboxes.
     const NOT_INGREDIENTS = /direction|instruction|variation|note|tip|carb|assembl|serve|prep/i;
@@ -66,7 +67,10 @@
       el.innerHTML = `
         <a class="back-link" href="recipes.html?type=${encodeURIComponent(cat.id)}">← Back to ${escapeHtml(cat.name)}</a>
         <div><span class="badge">${cat.emoji} ${escapeHtml(cat.name)}</span></div>
-        <h1>${escapeHtml(r.title)}</h1>
+        <div class="title-row">
+          <h1>${escapeHtml(r.title)}</h1>
+          ${favButtonHtml(r, true)}
+        </div>
         ${r.subtitle ? `<p class="lead">${escapeHtml(r.subtitle)}</p>` : ""}
         ${r.cover ? `<figure class="recipe-cover">
             <button type="button" class="photo-open" data-photo="-1" aria-label="View cover photo larger">

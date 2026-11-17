@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>All Recipes · Recipe Box</title>
-  <link rel="stylesheet" href="css/style.css?v=3">
+  <link rel="stylesheet" href="css/style.css?v=4">
 </head>
 <body>
   <header class="site-header">
@@ -15,6 +15,7 @@
         <a href="recipes.html" data-nav="all">All Recipes</a>
         <a href="recipes.html?type=entree" data-nav="entree">Entrees</a>
         <a href="recipes.html?type=dessert" data-nav="dessert">Desserts</a>
+        <a href="recipes.html?type=favorites" data-nav="favorites">★ Favorites</a>
         <a class="nav-add" href="https://recipe-box-submit.lawevanp.workers.dev/">+ Add recipe</a>
       </nav>
     </div>
@@ -35,7 +36,7 @@
     <div class="container">© <span id="year"></span> Recipe Box</div>
   </footer>
 
-  <script src="js/app.js?v=2"></script>
+  <script src="js/app.js?v=3"></script>
   <script>
     const params = new URLSearchParams(location.search);
     let query = params.get("q") || "";
@@ -45,7 +46,8 @@
     const chipsEl = document.getElementById("chips");
     searchEl.value = query;
 
-    const chipDefs = [{ id: "all", name: "All", emoji: "" }, ...CATEGORIES];
+    const FAVORITES = { id: "favorites", name: "Favorites", emoji: "★" };
+    const chipDefs = [{ id: "all", name: "All", emoji: "" }, FAVORITES, ...CATEGORIES];
     chipsEl.innerHTML = chipDefs.map((c) =>
       `<button class="chip" type="button" data-type="${c.id}">${c.emoji} ${c.name}</button>`
     ).join("");
@@ -53,11 +55,15 @@
     function render() {
       const results = searchRecipes(query, type);
       document.getElementById("results").innerHTML = results.map(recipeCardHtml).join("");
-      document.getElementById("empty").hidden = results.length > 0;
+      const emptyEl = document.getElementById("empty");
+      emptyEl.hidden = results.length > 0;
+      emptyEl.textContent = type === "favorites" && !query
+        ? "No favorites yet. Tap the ☆ on any recipe to save it here. Favorites are kept in this browser on this device."
+        : "No recipes match that search. Try a different word or type.";
       document.getElementById("count").textContent =
         `${results.length} recipe${results.length === 1 ? "" : "s"}` + (query ? ` matching "${query}"` : "");
 
-      const title = type === "all" ? "All Recipes" : categoryById(type).name;
+      const title = type === "all" ? "All Recipes" : type === "favorites" ? "Favorites" : categoryById(type).name;
       document.getElementById("page-title").textContent = title;
       document.title = `${title} · Recipe Box`;
 
@@ -80,6 +86,9 @@
       type = btn.dataset.type;
       render();
     });
+
+    // In the Favorites view, un-starring a recipe takes it off the list.
+    document.addEventListener("favoriteschange", () => { if (type === "favorites") render(); });
 
     loadRecipes().then(render);
   </script>

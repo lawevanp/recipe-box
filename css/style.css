@@ -402,3 +402,43 @@ figcaption { color: var(--muted); font-size: 0.85rem; margin-top: 6px; }
   .recipe-cover img { max-height: 240px; }
   body { background: #fff; color: #000; }
 }
+
+/* Favorites */
+.card-wrap { position: relative; display: flex; }
+.card-wrap > .recipe-card { flex: 1; }
+.fav-btn {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--muted);
+  border-radius: 999px;
+  cursor: pointer;
+  font: inherit;
+  line-height: 1;
+  transition: transform 0.1s, color 0.15s, border-color 0.15s;
+}
+.fav-btn:hover { color: var(--accent); border-color: var(--accent); }
+.fav-btn:active { transform: scale(0.9); }
+.fav-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.fav-btn.is-fav { color: var(--accent); border-color: var(--accent); }
+.card-wrap > .fav-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  font-size: 1.3rem;
+  box-shadow: var(--shadow);
+}
+.title-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.fav-btn-labeled {
+  flex-shrink: 0;
+  margin-top: 14px;
+  padding: 8px 14px;
+  font-size: 1rem;
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+}
+.fav-btn-labeled .fav-icon { font-size: 1.2rem; }
+@media print { .fav-btn { display: none; } }

@@ -164,8 +164,10 @@ async function loadRecipes() {
 
 function searchRecipes(query, category) {
   const terms = (query || "").toLowerCase().split(/\s+/).filter(Boolean);
+  const favs = category === "favorites" ? getFavorites() : null;
   return RECIPES.filter((r) => {
-    if (category && category !== "all" && r.category !== category) return false;
+    if (favs) { if (!favs.has(r.id)) return false; }
+    else if (category && category !== "all" && r.category !== category) return false;
     return terms.every((t) => r.searchText.includes(t));
   }).sort((a, b) => a.title.localeCompare(b.title));
 }
@@ -180,6 +182,8 @@ function recipeCardHtml(r) {
   const cat = categoryById(r.category);
   const time = timeLabel(r);
   return `
+    <div class="card-wrap">
+    ${favButtonHtml(r)}
     <a class="recipe-card" href="recipe.html?id=${encodeURIComponent(r.id)}">
       <div class="thumb">${r.cover
         ? `<img src="${escapeHtml(r.cover.src)}" alt="" loading="lazy">`
@@ -194,8 +198,71 @@ function recipeCardHtml(r) {
           ${r.yield ? `<span>🍽 ${escapeHtml(r.yield)}</span>` : ""}
         </div>
       </div>
-    </a>`;
+    </a>
+    </div>`;
 }
+
+// ---------- Favorites (saved in this browser only) ----------
+
+const FAV_KEY = "recipeBox.favorites";
+
+function getFavorites() {
+  try {
+    const list = JSON.parse(localStorage.getItem(FAV_KEY) || "[]");
+    return new Set(Array.isArray(list) ? list : []);
+  } catch {
+    return new Set(); // storage blocked or corrupted
+  }
+}
+
+function toggleFavorite(id) {
+  const favs = getFavorites();
+  if (favs.has(id)) favs.delete(id); else favs.add(id);
+  try { localStorage.setItem(FAV_KEY, JSON.stringify([...favs])); } catch { /* storage blocked */ }
+  syncFavButtons();
+  document.dispatchEvent(new CustomEvent("favoriteschange"));
+}
+
+// withLabel: show "Save"/"Saved" text next to the star (used on the recipe page).
+function favButtonHtml(r, withLabel = false) {
+  return `<button type="button" class="fav-btn${withLabel ? " fav-btn-labeled" : ""}"
+    data-fav="${escapeHtml(r.id)}" data-title="${escapeHtml(r.title)}">
+    <span class="fav-icon" aria-hidden="true"></span>${withLabel ? `<span class="fav-label"></span>` : ""}</button>`;
+}
+
+// Bring every star on the page in line with what's saved.
+function syncFavButtons() {
+  const favs = getFavorites();
+  document.querySelectorAll(".fav-btn[data-fav]").forEach((b) => {
+    const on = favs.has(b.dataset.fav);
+    b.classList.toggle("is-fav", on);
+    b.setAttribute("aria-pressed", on);
+    b.setAttribute("aria-label", `${on ? "Remove from" : "Add to"} favorites: ${b.dataset.title}`);
+    b.title = on ? "Remove from favorites" : "Add to favorites";
+    b.querySelector(".fav-icon").textContent = on ? "★" : "☆";
+    const label = b.querySelector(".fav-label");
+    if (label) label.textContent = on ? "Saved" : "Save";
+  });
+}
+
+document.addEventListener("click", (e) => {
+  const btn = e.target.closest(".fav-btn[data-fav]");
+  if (!btn) return;
+  e.preventDefault();
+  toggleFavorite(btn.dataset.fav);
+});
+
+// Starring in another tab updates this one too.
+window.addEventListener("storage", (e) => {
+  if (e.key !== FAV_KEY) return;
+  syncFavButtons();
+  document.dispatchEvent(new CustomEvent("favoriteschange"));
+});
+
+// New stars appear whenever cards are rendered; fill them in automatically.
+new MutationObserver(() => {
+  if (document.querySelector(".fav-btn:not([aria-pressed])")) syncFavButtons();
+}).observe(document.documentElement, { childList: true, subtree: true });
 
 function addPhotoUrl(r) {
   return `${SUBMIT_URL}photos?recipe=${encodeURIComponent(r.rawTitle)}`;
