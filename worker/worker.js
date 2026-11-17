@@ -7,7 +7,8 @@
 //
 // Once a submission is on the site (its id is in data/imported-submissions.txt), its photos are
 // deleted from storage here, so storage doesn't fill up. That happens when /admin is opened and
-// on the optional daily cron trigger (see SETUP.md).
+// on the daily cron trigger (see SETUP.md). The same trigger auto-approves up to
+// AUTO_APPROVE_PER_DAY new recipes a day.
 //
 // Setup (see SETUP.md): bind a KV namespace as SUBMISSIONS and add an ADMIN_PASSWORD secret.
 // Optional spam check: TURNSTILE_SITE_KEY (variable) and TURNSTILE_SECRET_KEY (secret).
@@ -19,6 +20,11 @@ const MAX_PHOTOS = 6;       // photos of the recipe itself (card, cookbook page.
 const MAX_DISH_PHOTOS = 6;  // photos of the finished dish
 const MAX_PHOTO_BYTES = 8 * 1024 * 1024;
 const SUBMITS_PER_HOUR = 5;
+// The daily cron approves at most this many waiting recipe submissions in any 24 hours, oldest
+// first. Anything beyond that waits for the owner (or the next day), so a burst of spam can't
+// cost more than this much work for the nightly routine that types recipes up. 0 turns it off.
+// Photo/cover submissions for existing recipes are never auto-approved.
+const AUTO_APPROVE_PER_DAY = 10;
 const LOGINS_PER_HOUR = 10;
 const CATEGORIES = ["breakfast", "entree", "side", "soup", "bread", "dessert", "snack", "sauce"];
 const PHOTO_TYPES = ["image/jpeg", "image/png", "image/webp", "image/gif"];
@@ -46,9 +52,15 @@ export default {
       return text("Something went wrong. Please try again.", 500);
     }
   },
-  // Optional daily cron trigger: clear out photos of submissions that are now on the site.
+  // Daily cron trigger: clear out photos of submissions that are now on the site, then
+  // auto-approve up to AUTO_APPROVE_PER_DAY waiting recipes (oldest first).
   async scheduled(event, env, ctx) {
-    if (env.SUBMISSIONS) ctx.waitUntil(cleanUpImported(env, await importedIds(), await allSubs(env)));
+    if (!env.SUBMISSIONS) return;
+    ctx.waitUntil((async () => {
+      const subs = await allSubs(env);
+      await cleanUpImported(env, await importedIds(), subs);
+      await autoApprove(env, subs);
+    })());
   },
 };
 
@@ -132,6 +144,26 @@ async function cleanUpImported(env, imported, subs) {
     sub.cleanedAt = new Date().toISOString();
     await putSub(env, sub);
   }
+}
+
+// Approve the oldest waiting recipe submissions, up to the daily cap (counting any already
+// auto-approved in the last 24 hours, so running the cron more often doesn't raise the cap).
+// Dish photos are kept as sent; the nightly routine still screens every photo before adding.
+async function autoApprove(env, subs, now = Date.now()) {
+  const dayAgo = new Date(now - 24 * 3600 * 1000).toISOString();
+  const recent = subs.filter((s) => s.autoApproved && (s.approvedAt || "") > dayAgo).length;
+  const room = Math.max(0, AUTO_APPROVE_PER_DAY - recent);
+  const waiting = subs
+    .filter((s) => s.status === "pending" && kindOf(s) === "recipe" && !s.manualOnly)
+    .sort((a, b) => a.createdAt.localeCompare(b.createdAt))
+    .slice(0, room);
+  for (const sub of waiting) {
+    sub.status = "approved";
+    sub.approvedAt = new Date(now).toISOString();
+    sub.autoApproved = true;
+    await putSub(env, sub);
+  }
+  return waiting.length;
 }
 
 const SMALL_WORDS = new Set(["a", "an", "and", "of", "de", "la", "the", "in", "with", "for", "or", "to"]);
@@ -533,6 +565,7 @@ async function adminPage(request, env, url) {
   const shown = subs.filter((s) => s.shown === tab);
   const labels = { pending: "To review", approved: "Approved", added: "On the site" };
   const pill = { pending: "Waiting for you", approved: "Approved", added: "On the site" };
+  const pillFor = (s) => s.shown === "approved" && s.autoApproved ? "Auto-approved" : pill[s.shown];
   const withCover = shown.some((s) => kindOf(s) === "photos")
     ? new Set((await siteRecipes()).filter((r) => r.hasCover).map((r) => r.title)) : new Set();
 
@@ -561,7 +594,7 @@ async function adminPage(request, env, url) {
 
     return `
 <article class="card">
-  <div class="head"><h2>${esc(title)}</h2><span class="pill">${isPhotos ? "Photos · " : ""}${pill[s.shown]}</span></div>
+  <div class="head"><h2>${esc(title)}</h2><span class="pill">${isPhotos ? "Photos · " : ""}${pillFor(s)}</span></div>
   <div class="meta">Sent ${esc(new Date(s.createdAt).toLocaleString("en-US", { dateStyle: "medium", timeStyle: "short" }))}${s.name ? ` by ${esc(s.name)}` : ""}${s.category ? ` · ${esc(s.category)}` : ""}</div>
   ${s.photos.length && !s.cleaned ? `<div><h3 class="section-label">Recipe photos</h3></div>
   <div class="thumbs">${s.photos.map((p) => `<a href="/photo/${p}" target="_blank" rel="noopener"><img src="/photo/${p}" alt="Recipe photo" loading="lazy"></a>`).join("")}</div>` : ""}
@@ -580,7 +613,9 @@ async function adminPage(request, env, url) {
   }).join("");
 
   const empty = {
-    pending: "Nothing to review right now. New submissions will show up here.",
+    pending: AUTO_APPROVE_PER_DAY
+      ? `Nothing to review right now. New recipes are approved automatically once a day (up to ${AUTO_APPROVE_PER_DAY} a day); photo submissions wait here for you.`
+      : "Nothing to review right now. New submissions will show up here.",
     approved: "Nothing approved is waiting. When there is, ask Claude Code to add the approved submissions to Recipe Box.",
     added: "Recipes and photos that have been added to the site show up here.",
   }[tab];
@@ -629,7 +664,14 @@ async function adminAction(request, env) {
     await putSub(env, sub);
     return redirect("/admin?tab=pending");
   }
-  if (action === "unapprove") { sub.status = "pending"; await putSub(env, sub); return redirect("/admin?tab=approved"); }
+  if (action === "unapprove") {
+    // Moved back by the owner: it stays for manual review and is never auto-approved again.
+    sub.status = "pending";
+    sub.autoApproved = false;
+    sub.manualOnly = true;
+    await putSub(env, sub);
+    return redirect("/admin?tab=approved");
+  }
   if (action === "delete") { await deleteSub(env, sub); return redirect("/admin"); }
   return redirect("/admin");
 }

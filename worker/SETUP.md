@@ -43,11 +43,24 @@ a credit card or your own domain.
    - Type **Secret**, name `TURNSTILE_SECRET_KEY`, value: the secret key
 5. Click **Deploy**.
 
-## 7. (Recommended) Clean up photos automatically every day
-Once a submission is on the site, the worker deletes its photos from storage. That already
-happens whenever you open `/admin`; a daily trigger makes sure it happens even if you don't.
-1. In the worker's **Settings → Trigger events** (or **Triggers**), click **Add** → **Cron trigger**.
-2. Choose a daily schedule (for example `0 9 * * *`), and click **Add** / **Deploy**.
+## 7. (Recommended) Daily trigger: auto-approve new recipes and clean up photos
+Once a day the worker:
+- approves up to **10** waiting recipe submissions, oldest first (`AUTO_APPROVE_PER_DAY` near
+  the top of `worker.js`; set it to `0` to turn this off). Anything beyond 10 waits under
+  **To review** for you or the next day. Photo/cover submissions for existing recipes are never
+  auto-approved. If you click **Move back to review** on an auto-approved one, it's never
+  auto-approved again.
+- deletes stored photos of submissions that are already on the site (this also happens
+  whenever you open `/admin`).
+
+The nightly Claude routine still reads every approved submission before adding it, and holds
+back anything that isn't a real recipe, is spam, or is a duplicate.
+
+1. In the worker's **Settings → Trigger events** (or **Triggers**), click **Add** → **Cron trigger**
+   (or edit the existing one).
+2. Use `0 4 * * *`. Cloudflare times are UTC, so that's 11 PM Eastern / 9 PM Mountain in
+   winter, an hour before the Claude routine that adds approved recipes runs at midnight Eastern.
+   Click **Add** / **Deploy**.
 
 ## 8. Try it
 - Public page: `https://recipe-box-submit.<yourname>.workers.dev/`. Send yourself a test recipe.
@@ -60,6 +73,8 @@ at it.
 ## Day to day
 - People send recipes from the public page, and dish photos from `/photos` (or the
   **Add a cover photo / Add your photo** button on any recipe). They wait under **To review** on `/admin`.
+  With the daily trigger from step 7, new recipes (up to 10 a day) are approved for you; they
+  show as **Auto-approved**.
 - **Approve** the ones you want; **Delete** the rest. For dish photos you can untick ones you
   don't want, choose the cover, and fix the "photo by" names before approving.
 - Ask Claude Code to "add the approved submissions to Recipe Box". It types up recipes, copies
